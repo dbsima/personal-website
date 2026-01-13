@@ -1,14 +1,15 @@
 {
   "date": "2026-01-11",
-  "name": "Noir x Soft Humanist",
+  "name": "Sand x Classic Elegant",
+  "layout": "stacked",
   "colors": {
-    "--bg-color": "#0a0a0a",
-    "--text-color": "#ededed",
-    "--accent-color": "#ffffff",
-    "--card-bg": "rgba(255,255,255,0.03)",
-    "--heading-font": "'Fraunces', serif",
+    "--bg-color": "#292524",
+    "--text-color": "#e7e5e4",
+    "--accent-color": "#d6d3d1",
+    "--card-bg": "#44403c",
+    "--heading-font": "'Cinzel', serif",
     "--body-font": "'Inter', sans-serif"
   },
-  "paletteName": "Noir",
-  "fontName": "Soft Humanist"
+  "paletteName": "Sand",
+  "fontName": "Classic Elegant"
 }

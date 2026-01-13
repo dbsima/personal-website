@@ -1,14 +1,15 @@
 {
   "date": "2026-01-05",
-  "name": "Obsidian x Classic Elegant",
+  "name": "Noir x Modern Editorial",
+  "layout": "stacked",
   "colors": {
-    "--bg-color": "#111111",
-    "--text-color": "#a1a1aa",
-    "--accent-color": "#eab308",
-    "--card-bg": "#18181b",
-    "--heading-font": "'Cinzel', serif",
+    "--bg-color": "#0a0a0a",
+    "--text-color": "#ededed",
+    "--accent-color": "#ffffff",
+    "--card-bg": "rgba(255,255,255,0.03)",
+    "--heading-font": "'Playfair Display', serif",
     "--body-font": "'Inter', sans-serif"
   },
-  "paletteName": "Obsidian",
-  "fontName": "Classic Elegant"
+  "paletteName": "Noir",
+  "fontName": "Modern Editorial"
 }

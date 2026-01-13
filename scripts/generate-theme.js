@@ -69,6 +69,8 @@ const FONT_PAIRINGS = [
     }
 ];
 
+const LAYOUTS = ["split", "reversed", "stacked", "hero"];
+
 function getRandomItem(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
@@ -76,17 +78,20 @@ function getRandomItem(arr) {
 function generateTheme() {
     const palette = getRandomItem(PALETTES);
     const fontPairing = getRandomItem(FONT_PAIRINGS);
+    const layout = getRandomItem(LAYOUTS);
 
     const theme = {
         date: new Date().toISOString().split('T')[0],
         name: `${palette.name} x ${fontPairing.name}`,
-        colors: palette.colors,
-        font: fontPairing.fonts['--body-font'], // Fallback for calendar logic if needed
-        // We override the specific vars:
+        layout: layout,
         colors: {
             ...palette.colors,
             ...fontPairing.fonts
-        }
+        },
+        // Fallback for metadata if needed
+        paletteName: palette.name,
+        fontName: fontPairing.name,
+        font: fontPairing.fonts['--body-font'] // Legacy fallback
     };
 
     return theme;

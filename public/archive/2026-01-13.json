@@ -1,14 +1,15 @@
 {
   "date": "2026-01-13",
-  "name": "Sand x Classic Elegant",
+  "name": "Midnight Blue x Modern Editorial",
+  "layout": "hero",
   "colors": {
-    "--bg-color": "#292524",
-    "--text-color": "#e7e5e4",
-    "--accent-color": "#d6d3d1",
-    "--card-bg": "#44403c",
-    "--heading-font": "'Cinzel', serif",
+    "--bg-color": "#020617",
+    "--text-color": "#cbd5e1",
+    "--accent-color": "#38bdf8",
+    "--card-bg": "#0f172a",
+    "--heading-font": "'Playfair Display', serif",
     "--body-font": "'Inter', sans-serif"
   },
-  "paletteName": "Sand",
-  "fontName": "Classic Elegant"
+  "paletteName": "Midnight Blue",
+  "fontName": "Modern Editorial"
 }

@@ -1,14 +1,15 @@
 {
   "date": "2026-01-09",
-  "name": "Swiss Style x Tech Brutalist",
+  "name": "Obsidian x Soft Humanist",
+  "layout": "reversed",
   "colors": {
-    "--bg-color": "#ffffff",
-    "--text-color": "#171717",
-    "--accent-color": "#dc2626",
-    "--card-bg": "#f5f5f5",
-    "--heading-font": "'Space Grotesk', sans-serif",
-    "--body-font": "'Space Grotesk', sans-serif"
+    "--bg-color": "#111111",
+    "--text-color": "#a1a1aa",
+    "--accent-color": "#eab308",
+    "--card-bg": "#18181b",
+    "--heading-font": "'Fraunces', serif",
+    "--body-font": "'Inter', sans-serif"
   },
-  "paletteName": "Swiss Style",
-  "fontName": "Tech Brutalist"
+  "paletteName": "Obsidian",
+  "fontName": "Soft Humanist"
 }

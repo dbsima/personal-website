@@ -61,6 +61,7 @@ async function loadTheme(dateOrIdentifier) {
 
 function applyTheme(theme) {
     const root = document.documentElement;
+    const app = document.getElementById('app');
     const colors = theme.colors;
 
     // Apply colors
@@ -70,6 +71,13 @@ function applyTheme(theme) {
 
     // Apply font
     root.style.setProperty('--font-family', theme.font);
+
+    // Apply Layout
+    // Default to 'split' if undefined
+    const layout = theme.layout || 'split';
+    if (app) {
+        app.setAttribute('data-layout', layout);
+    }
 }
 
 function updateDateDisplay(dateString) {

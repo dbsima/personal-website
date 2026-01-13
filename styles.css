@@ -54,10 +54,69 @@ body {
     margin: 0 auto;
     padding: 8rem 2rem 4rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
     min-height: 100vh;
+    /* Default: Split */
+    grid-template-columns: 1fr 1fr;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Layout Variations */
+
+/* 1. Reversed: Calendar Left, Profile Right */
+#app[data-layout="reversed"] {
+    grid-template-columns: 1fr 1fr;
+}
+
+#app[data-layout="reversed"] header {
+    order: 2;
+    text-align: right;
+}
+
+#app[data-layout="reversed"] #calendar-container {
+    order: 1;
+}
+
+/* 2. Stacked: Center Everything vertically */
+#app[data-layout="stacked"] {
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    text-align: center;
+}
+
+#app[data-layout="stacked"] header {
+    text-align: center;
+}
+
+#app[data-layout="stacked"] #experience-list {
+    align-items: center;
+    /* Center flex items */
+}
+
+#app[data-layout="stacked"] .experience-item {
+    border-left: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    padding-left: 0;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+/* 3. Hero: Large Profile Top, Calendar Bottom */
+#app[data-layout="hero"] {
+    grid-template-columns: 1fr;
+    gap: 6rem;
+}
+
+#app[data-layout="hero"] header h1 {
+    font-size: clamp(5rem, 15vw, 10rem);
+    line-height: 0.9;
+}
+
+#app[data-layout="hero"] #calendar-container {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* Typography */

@@ -1,14 +1,15 @@
 {
   "date": "2026-01-01",
-  "name": "Slate x Tech Brutalist",
+  "name": "Deep Forest x Modern Editorial",
+  "layout": "hero",
   "colors": {
-    "--bg-color": "#1e293b",
-    "--text-color": "#f1f5f9",
-    "--accent-color": "#94a3b8",
-    "--card-bg": "#334155",
-    "--heading-font": "'Space Grotesk', sans-serif",
-    "--body-font": "'Space Grotesk', sans-serif"
+    "--bg-color": "#052e16",
+    "--text-color": "#dcfce7",
+    "--accent-color": "#4ade80",
+    "--card-bg": "#064e3b",
+    "--heading-font": "'Playfair Display', serif",
+    "--body-font": "'Inter', sans-serif"
   },
-  "paletteName": "Slate",
-  "fontName": "Tech Brutalist"
+  "paletteName": "Deep Forest",
+  "fontName": "Modern Editorial"
 }

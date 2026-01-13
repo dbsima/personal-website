@@ -1,14 +1,15 @@
 {
   "date": "2026-01-02",
-  "name": "Obsidian x Classic Elegant",
+  "name": "Sand x Classic Elegant",
+  "layout": "split",
   "colors": {
-    "--bg-color": "#111111",
-    "--text-color": "#a1a1aa",
-    "--accent-color": "#eab308",
-    "--card-bg": "#18181b",
+    "--bg-color": "#292524",
+    "--text-color": "#e7e5e4",
+    "--accent-color": "#d6d3d1",
+    "--card-bg": "#44403c",
     "--heading-font": "'Cinzel', serif",
     "--body-font": "'Inter', sans-serif"
   },
-  "paletteName": "Obsidian",
+  "paletteName": "Sand",
   "fontName": "Classic Elegant"
 }

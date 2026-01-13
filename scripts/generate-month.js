@@ -66,6 +66,8 @@ const FONT_PAIRINGS = [
     }
 ];
 
+const LAYOUTS = ["split", "reversed", "stacked", "hero"];
+
 function getRandomItem(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
@@ -73,10 +75,12 @@ function getRandomItem(arr) {
 function generateTheme(dateStr) {
     const palette = getRandomItem(PALETTES);
     const fontPairing = getRandomItem(FONT_PAIRINGS);
+    const layout = getRandomItem(LAYOUTS);
 
     return {
         date: dateStr,
         name: `${palette.name} x ${fontPairing.name}`,
+        layout: layout,
         colors: {
             ...palette.colors,
             ...fontPairing.fonts

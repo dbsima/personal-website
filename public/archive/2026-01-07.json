@@ -1,14 +1,15 @@
 {
   "date": "2026-01-07",
-  "name": "Noir x Modern Editorial",
+  "name": "Midnight Blue x Soft Humanist",
+  "layout": "stacked",
   "colors": {
-    "--bg-color": "#0a0a0a",
-    "--text-color": "#ededed",
-    "--accent-color": "#ffffff",
-    "--card-bg": "rgba(255,255,255,0.03)",
-    "--heading-font": "'Playfair Display', serif",
+    "--bg-color": "#020617",
+    "--text-color": "#cbd5e1",
+    "--accent-color": "#38bdf8",
+    "--card-bg": "#0f172a",
+    "--heading-font": "'Fraunces', serif",
     "--body-font": "'Inter', sans-serif"
   },
-  "paletteName": "Noir",
-  "fontName": "Modern Editorial"
+  "paletteName": "Midnight Blue",
+  "fontName": "Soft Humanist"
 }

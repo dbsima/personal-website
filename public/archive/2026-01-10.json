@@ -1,14 +1,15 @@
 {
   "date": "2026-01-10",
-  "name": "Slate x Modern Editorial",
+  "name": "Midnight Blue x Classic Elegant",
+  "layout": "reversed",
   "colors": {
-    "--bg-color": "#1e293b",
-    "--text-color": "#f1f5f9",
-    "--accent-color": "#94a3b8",
-    "--card-bg": "#334155",
-    "--heading-font": "'Playfair Display', serif",
+    "--bg-color": "#020617",
+    "--text-color": "#cbd5e1",
+    "--accent-color": "#38bdf8",
+    "--card-bg": "#0f172a",
+    "--heading-font": "'Cinzel', serif",
     "--body-font": "'Inter', sans-serif"
   },
-  "paletteName": "Slate",
-  "fontName": "Modern Editorial"
+  "paletteName": "Midnight Blue",
+  "fontName": "Classic Elegant"
 }

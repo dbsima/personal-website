@@ -1,14 +1,15 @@
 {
   "date": "2026-01-12",
-  "name": "Deep Forest x Classic Elegant",
+  "name": "Sand x Soft Humanist",
+  "layout": "stacked",
   "colors": {
-    "--bg-color": "#052e16",
-    "--text-color": "#dcfce7",
-    "--accent-color": "#4ade80",
-    "--card-bg": "#064e3b",
-    "--heading-font": "'Cinzel', serif",
+    "--bg-color": "#292524",
+    "--text-color": "#e7e5e4",
+    "--accent-color": "#d6d3d1",
+    "--card-bg": "#44403c",
+    "--heading-font": "'Fraunces', serif",
     "--body-font": "'Inter', sans-serif"
   },
-  "paletteName": "Deep Forest",
-  "fontName": "Classic Elegant"
+  "paletteName": "Sand",
+  "fontName": "Soft Humanist"
 }
