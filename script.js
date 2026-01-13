@@ -30,6 +30,7 @@ async function loadProfile() {
         document.getElementById('name').textContent = data.name;
         document.getElementById('description').textContent = data.description;
         document.getElementById('linkedin').href = data.linkedin_url;
+        document.getElementById('github').href = data.github_url;
 
         // Render Experience
         const expList = document.getElementById('experience-list');

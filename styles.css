@@ -129,7 +129,14 @@ h1 i {
     font-weight: 300;
 }
 
-#linkedin {
+#social-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#linkedin,
+#github {
     display: inline-block;
     padding: 0.8rem 1.5rem;
     border: 1px solid var(--accent-color);
@@ -138,9 +145,11 @@ h1 i {
     letter-spacing: 1px;
     font-size: 0.8rem;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
-#linkedin:hover {
+#linkedin:hover,
+#github:hover {
     background: var(--accent-color);
     color: var(--bg-color);
 }
