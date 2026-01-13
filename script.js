@@ -167,7 +167,11 @@ function renderCalendar(date) {
         dayEl.textContent = day;
 
         const currentDayDate = new Date(date.getFullYear(), date.getMonth(), day);
-        const dateString = currentDayDate.toISOString().split('T')[0];
+        // Fix: Use local date components instead of toISOString (which uses UTC)
+        const year = currentDayDate.getFullYear();
+        const month = String(currentDayDate.getMonth() + 1).padStart(2, '0');
+        const dayStr = String(currentDayDate.getDate()).padStart(2, '0');
+        const dateString = `${year}-${month}-${dayStr}`;
 
         // Check if future
         if (currentDayDate > today) {
