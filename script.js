@@ -169,6 +169,7 @@ function renderCalendar(date) {
     const firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
     const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
     const today = new Date();
+    const minDay = new Date(2025, 12, 31);
 
     // Empty slots for days before 1st
     // Day of week: 0 (Sun) - 6 (Sat)
@@ -194,7 +195,7 @@ function renderCalendar(date) {
         const dateString = `${year}-${month}-${dayStr}`;
 
         // Check if future
-        if (currentDayDate > today) {
+        if (currentDayDate > today || currentDayDate <= minDay) {
             dayEl.classList.add('empty');
             dayEl.style.opacity = '0.3';
         } else {
