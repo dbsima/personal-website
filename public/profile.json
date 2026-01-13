@@ -1,5 +1,25 @@
 {
   "name": "Bogdan",
   "description": "Software Engineer & AI Enthusiast. Building things that matter.",
-  "linkedin_url": "https://www.linkedin.com/in/bogdan"
+  "linkedin_url": "https://www.linkedin.com/in/bogdan",
+  "experience": [
+    {
+      "role": "Senior Software Engineer",
+      "company": "Tech Corp",
+      "period": "2023 - Present",
+      "description": "Leading the frontend infrastructure team."
+    },
+    {
+      "role": "Software Engineer",
+      "company": "StartUp Inc",
+      "period": "2021 - 2023",
+      "description": "Built the core product from 0 to 1."
+    },
+    {
+      "role": "Junior Developer",
+      "company": "Web Agency",
+      "period": "2019 - 2021",
+      "description": "Developed websites for various clients."
+    }
+  ]
 }

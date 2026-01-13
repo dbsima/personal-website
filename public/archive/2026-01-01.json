@@ -1,0 +1,14 @@
+{
+  "date": "2026-01-01",
+  "name": "Slate x Tech Brutalist",
+  "colors": {
+    "--bg-color": "#1e293b",
+    "--text-color": "#f1f5f9",
+    "--accent-color": "#94a3b8",
+    "--card-bg": "#334155",
+    "--heading-font": "'Space Grotesk', sans-serif",
+    "--body-font": "'Space Grotesk', sans-serif"
+  },
+  "paletteName": "Slate",
+  "fontName": "Tech Brutalist"
+}

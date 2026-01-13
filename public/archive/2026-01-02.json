@@ -1,0 +1,14 @@
+{
+  "date": "2026-01-02",
+  "name": "Obsidian x Classic Elegant",
+  "colors": {
+    "--bg-color": "#111111",
+    "--text-color": "#a1a1aa",
+    "--accent-color": "#eab308",
+    "--card-bg": "#18181b",
+    "--heading-font": "'Cinzel', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Obsidian",
+  "fontName": "Classic Elegant"
+}

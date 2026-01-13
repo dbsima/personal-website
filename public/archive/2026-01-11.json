@@ -1,0 +1,14 @@
+{
+  "date": "2026-01-11",
+  "name": "Noir x Soft Humanist",
+  "colors": {
+    "--bg-color": "#0a0a0a",
+    "--text-color": "#ededed",
+    "--accent-color": "#ffffff",
+    "--card-bg": "rgba(255,255,255,0.03)",
+    "--heading-font": "'Fraunces', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Noir",
+  "fontName": "Soft Humanist"
+}

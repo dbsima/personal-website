@@ -18,6 +18,25 @@ async function loadProfile() {
         document.getElementById('name').textContent = data.name;
         document.getElementById('description').textContent = data.description;
         document.getElementById('linkedin').href = data.linkedin_url;
+
+        // Render Experience
+        const expList = document.getElementById('experience-list');
+        if (data.experience && expList) {
+            expList.innerHTML = ''; // Clear loading state
+            data.experience.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'experience-item';
+                div.innerHTML = `
+                    <div class="exp-header">
+                        <span class="exp-role">${item.role}</span>
+                        <span class="exp-company">@ ${item.company}</span>
+                    </div>
+                    <div class="exp-period">${item.period}</div>
+                    <p class="exp-desc">${item.description}</p>
+                `;
+                expList.appendChild(div);
+            });
+        }
     } catch (error) {
         console.error('Error loading profile:', error);
     }

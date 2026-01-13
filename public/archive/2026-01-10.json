@@ -1,0 +1,14 @@
+{
+  "date": "2026-01-10",
+  "name": "Slate x Modern Editorial",
+  "colors": {
+    "--bg-color": "#1e293b",
+    "--text-color": "#f1f5f9",
+    "--accent-color": "#94a3b8",
+    "--card-bg": "#334155",
+    "--heading-font": "'Playfair Display', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Slate",
+  "fontName": "Modern Editorial"
+}

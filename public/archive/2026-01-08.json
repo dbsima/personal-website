@@ -1,0 +1,14 @@
+{
+  "date": "2026-01-08",
+  "name": "Noir x Modern Editorial",
+  "colors": {
+    "--bg-color": "#0a0a0a",
+    "--text-color": "#ededed",
+    "--accent-color": "#ffffff",
+    "--card-bg": "rgba(255,255,255,0.03)",
+    "--heading-font": "'Playfair Display', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Noir",
+  "fontName": "Modern Editorial"
+}

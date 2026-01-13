@@ -1,11 +1,14 @@
 {
   "date": "2026-01-13",
-  "name": "Coffee",
+  "name": "Sand x Classic Elegant",
   "colors": {
-    "--bg-color": "#271c19",
-    "--text-color": "#f5e6d3",
-    "--accent-color": "#d4a373",
-    "--card-bg": "#432818"
+    "--bg-color": "#292524",
+    "--text-color": "#e7e5e4",
+    "--accent-color": "#d6d3d1",
+    "--card-bg": "#44403c",
+    "--heading-font": "'Cinzel', serif",
+    "--body-font": "'Inter', sans-serif"
   },
-  "font": "'Merriweather', serif"
+  "paletteName": "Sand",
+  "fontName": "Classic Elegant"
 }

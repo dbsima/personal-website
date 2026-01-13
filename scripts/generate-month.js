@@ -3,8 +3,7 @@ const path = require('path');
 
 const ARCHIVE_DIR = path.join(__dirname, '../public/archive');
 
-// 1. Define Palettes (Bg, Text, Accent, CardBg)
-// Inspired by linear.app, vercel.com, and the user's provided image
+// DUPLICATED FROM generate-theme.js (Ideally refactor to share code)
 const PALETTES = [
     {
         name: "Noir",
@@ -36,8 +35,6 @@ const PALETTES = [
     }
 ];
 
-// 2. Define Font Pairings (Heading + Body)
-// Must match what is loaded in index.html
 const FONT_PAIRINGS = [
     {
         name: "Modern Editorial",
@@ -73,41 +70,59 @@ function getRandomItem(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
-function generateTheme() {
+function generateTheme(dateStr) {
     const palette = getRandomItem(PALETTES);
     const fontPairing = getRandomItem(FONT_PAIRINGS);
 
-    const theme = {
-        date: new Date().toISOString().split('T')[0],
+    return {
+        date: dateStr,
         name: `${palette.name} x ${fontPairing.name}`,
-        colors: palette.colors,
-        font: fontPairing.fonts['--body-font'], // Fallback for calendar logic if needed
-        // We override the specific vars:
         colors: {
             ...palette.colors,
             ...fontPairing.fonts
-        }
+        },
+        // Fallback for metadata if needed
+        paletteName: palette.name,
+        fontName: fontPairing.name
     };
-
-    return theme;
 }
 
-function saveTheme(theme) {
+function generateMonth() {
     if (!fs.existsSync(ARCHIVE_DIR)) {
         fs.mkdirSync(ARCHIVE_DIR, { recursive: true });
     }
 
-    // Save as YYYY-MM-DD.json
-    const filename = `${theme.date}.json`;
-    const filepath = path.join(ARCHIVE_DIR, filename);
-    fs.writeFileSync(filepath, JSON.stringify(theme, null, 2));
-    console.log(`Saved theme to ${filepath}`);
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = today.getMonth(); // 0-indexed
 
-    // Save as latest.json
-    const latestPath = path.join(ARCHIVE_DIR, 'latest.json');
-    fs.writeFileSync(latestPath, JSON.stringify(theme, null, 2));
-    console.log(`Saved theme to ${latestPath}`);
+    // Number of days in current month
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    console.log(`Generating themes for ${year}-${month + 1} (${daysInMonth} days)...`);
+
+    for (let d = 1; d <= daysInMonth; d++) {
+        // Format YYYY-MM-DD
+        const dateDate = new Date(year, month, d);
+        const yyyy = dateDate.getFullYear();
+        const mm = String(dateDate.getMonth() + 1).padStart(2, '0');
+        const dd = String(dateDate.getDate()).padStart(2, '0');
+        const dateStr = `${yyyy}-${mm}-${dd}`;
+
+        const theme = generateTheme(dateStr);
+        const filepath = path.join(ARCHIVE_DIR, `${dateStr}.json`);
+
+        fs.writeFileSync(filepath, JSON.stringify(theme, null, 2));
+        console.log(`Saved ${dateStr}.json`);
+
+        // If it's today, also update latest.json
+        const currentDatStr = new Date().toISOString().split('T')[0];
+        if (dateStr === currentDatStr) {
+            const latestPath = path.join(ARCHIVE_DIR, 'latest.json');
+            fs.writeFileSync(latestPath, JSON.stringify(theme, null, 2));
+            console.log(`Updated latest.json`);
+        }
+    }
 }
 
-const theme = generateTheme();
-saveTheme(theme);
+generateMonth();
