@@ -5,7 +5,19 @@ let currentCalendarDate = new Date();
 
 document.addEventListener('DOMContentLoaded', () => {
     loadProfile();
-    loadTheme('latest'); // Load today's theme by default
+
+    // Check URL params
+    const urlParams = new URLSearchParams(window.location.search);
+    const dateParam = urlParams.get('date');
+
+    if (dateParam && dateParam.length === 8) {
+        // Convert YYYYMMDD -> YYYY-MM-DD
+        const formattedDate = `${dateParam.slice(0, 4)}-${dateParam.slice(4, 6)}-${dateParam.slice(6, 8)}`;
+        loadTheme(formattedDate, false); // Don't push state on initial load if we want (or maybe we do is fine)
+    } else {
+        loadTheme('latest'); // Load today's theme by default
+    }
+
     initCalendar();
 });
 
@@ -42,7 +54,7 @@ async function loadProfile() {
     }
 }
 
-async function loadTheme(dateOrIdentifier) {
+async function loadTheme(dateOrIdentifier, updateUrl = true) {
     try {
         const filename = dateOrIdentifier === 'latest' ? 'latest.json' : `${dateOrIdentifier}.json`;
         const response = await fetch(`${ARCHIVE_PATH}${filename}`);
@@ -54,6 +66,14 @@ async function loadTheme(dateOrIdentifier) {
         const theme = await response.json();
         applyTheme(theme);
         updateDateDisplay(theme.date);
+
+        // Update URL: YYYY-MM-DD -> YYYYMMDD
+        if (updateUrl && theme.date) {
+            const shortDate = theme.date.replace(/-/g, '');
+            const newUrl = `${window.location.pathname}?date=${shortDate}`;
+            window.history.pushState({ path: newUrl }, '', newUrl);
+        }
+
     } catch (error) {
         console.error('Error loading theme:', error);
     }
