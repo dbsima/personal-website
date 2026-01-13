@@ -19,31 +19,49 @@
             <!-- Profile info will be injected here -->
             <h1 id="name">Loading...</h1>
             <p id="description"></p>
-            <div id="experience-list">
-                <!-- Experience items will be injected here -->
-            </div>
             <br>
             <a id="linkedin" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </header>
 
-        <main>
-            <div id="calendar-container">
-                <h2>Archive</h2>
-                <div id="calendar-controls">
-                    <button id="prev-month">&lt;</button>
-                    <span id="current-month-label"></span>
-                    <button id="next-month">&gt;</button>
-                </div>
-                <div id="calendar-grid">
-                    <!-- Calendar days will be injected here -->
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <p>Style generated on: <span id="style-date">Today</span></p>
-        </footer>
+        <div id="experience-list">
+            <!-- Experience items will be injected here -->
+        </div>
     </div>
+
+    <!-- Floating Action Button -->
+    <button id="calendar-toggle-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        Archive
+    </button>
+
+    <!-- Modal Calendar -->
+    <div id="calendar-overlay" class="hidden">
+        <div id="calendar-container">
+            <div class="calendar-header-row">
+                <h2>Archive</h2>
+                <button id="close-calendar">×</button>
+            </div>
+
+            <div id="calendar-controls">
+                <button id="prev-month">&lt;</button>
+                <span id="current-month-label"></span>
+                <button id="next-month">&gt;</button>
+            </div>
+            <div id="calendar-grid">
+                <!-- Calendar days will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Style generated on <span id="style-date">Today</span></p>
+    </footer>
     <script src="script.js"></script>
 </body>
 

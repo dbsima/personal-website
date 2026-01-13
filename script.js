@@ -99,6 +99,37 @@ function initCalendar() {
         currentCalendarDate.setMonth(currentCalendarDate.getMonth() + 1);
         renderCalendar(currentCalendarDate);
     });
+
+    // Modal Toggle Logic
+    const toggleBtn = document.getElementById('calendar-toggle-btn');
+    const overlay = document.getElementById('calendar-overlay');
+    const closeBtn = document.getElementById('close-calendar');
+    const container = document.getElementById('calendar-container');
+
+    function toggleCalendar() {
+        overlay.classList.toggle('hidden');
+    }
+
+    function closeCalendar() {
+        overlay.classList.add('hidden');
+    }
+
+    if (toggleBtn) toggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleCalendar();
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', closeCalendar);
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+        const isClickInside = container.contains(e.target);
+        const isClickOnToggle = toggleBtn.contains(e.target);
+
+        if (!isClickInside && !isClickOnToggle && !overlay.classList.contains('hidden')) {
+            closeCalendar();
+        }
+    });
 }
 
 function renderCalendar(date) {
