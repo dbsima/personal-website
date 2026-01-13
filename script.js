@@ -19,7 +19,54 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initCalendar();
+    initInteractions();
 });
+
+function initInteractions() {
+    // 1. Variable Font Interaction for H1
+    const nameHeader = document.getElementById('name');
+    if (nameHeader) {
+        document.addEventListener('mousemove', (e) => {
+            const { clientX, clientY } = e;
+            const { innerWidth, innerHeight } = window;
+
+            // Calculate percentage across screen (0 to 1)
+            const xPct = clientX / innerWidth;
+            const yPct = clientY / innerHeight;
+
+            // Map to weight (e.g., 300 to 700) and optical size or slant if available
+            // Fraunces has opsz (9..144) and wght (100..900)
+            const weight = 100 + (xPct * 800); // Mapped to 100-900
+            const slant = yPct * -15; // Slant -15 to 0 (if supported, Fraunces supports 'SOFT' 0-100 and 'WONK' 0-1)
+
+            // Simple weight + optical size mapping
+            // Note: Fraunces syntax might vary, let's stick to standard wght first + opsz
+            const opsz = 9 + (yPct * 135);
+
+            nameHeader.style.fontVariationSettings = `'wght' ${weight}, 'opsz' ${opsz}`;
+        });
+    }
+
+    // 2. Scroll Reveal Observer
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.experience-item, #profile-container, .bento-card').forEach(el => {
+        el.classList.add('reveal-on-scroll');
+        observer.observe(el);
+    });
+}
 
 async function loadProfile() {
     try {

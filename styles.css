@@ -422,6 +422,18 @@ footer a {
     text-underline-offset: 2px;
 }
 
+/* Scroll Reveal Animation */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reveal-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
     #app {
