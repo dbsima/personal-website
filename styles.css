@@ -389,6 +389,13 @@ footer {
     pointer-events: none;
 }
 
+footer a {
+    color: inherit;
+    pointer-events: auto;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
     #app {
