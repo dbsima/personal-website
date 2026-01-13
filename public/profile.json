@@ -1,25 +1,37 @@
 {
-  "name": "Bogdan",
-  "description": "Software Engineer & AI Enthusiast. Building things that matter.",
-  "linkedin_url": "https://www.linkedin.com/in/bogdan",
+  "name": "Bogdan Sima",
+  "description": "Ex-CTO, Software Engineer & AI Enthusiast. Building things that matter. Currently training in Product and Vibe-coding.",
+  "linkedin_url": "https://www.linkedin.com/in/bogdan-sima-037385124",
   "experience": [
     {
-      "role": "Senior Software Engineer",
-      "company": "Tech Corp",
-      "period": "2023 - Present",
-      "description": "Leading the frontend infrastructure team."
+      "role": "CTO",
+      "company": "Aimigo (ex-Gymglish)",
+      "period": "Jan 2022 - Dec 2025",
+      "description": "Led a team of 14 engineers and one PM building an AI chat-based coaching service."
+    },
+    {
+      "role": "Lead Software Engineer",
+      "company": "Aimigo (ex-Gymglish)",
+      "period": "Sep 2019 - Jan 2022",
+      "description": "Developed an internal CMS tool and led the migration to React Native."
     },
     {
       "role": "Software Engineer",
-      "company": "StartUp Inc",
-      "period": "2021 - 2023",
-      "description": "Built the core product from 0 to 1."
+      "company": "Aimigo (ex-Gymglish)",
+      "period": "Nov 2014 - Sep 2019",
+      "description": "Built multiple apps, systems, and APIs."
     },
     {
-      "role": "Junior Developer",
-      "company": "Web Agency",
-      "period": "2019 - 2021",
-      "description": "Developed websites for various clients."
+      "role": "Software Engineer Intern",
+      "company": "Adobe",
+      "period": "Mar 2014 - Jul 2014",
+      "description": "Created a new file format to support dynamic images."
+    },
+    {
+      "role": "Software Quality Assurance Engineer Intern",
+      "company": "Avira",
+      "period": "Jul 2013 - Oct 2013",
+      "description": "Increased the code coverage from 70% to 95% for both unit tests"
     }
   ]
 }
