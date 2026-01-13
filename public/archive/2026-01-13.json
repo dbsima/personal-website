@@ -1,0 +1,11 @@
+{
+  "date": "2026-01-13",
+  "name": "Coffee",
+  "colors": {
+    "--bg-color": "#271c19",
+    "--text-color": "#f5e6d3",
+    "--accent-color": "#d4a373",
+    "--card-bg": "#432818"
+  },
+  "font": "'Merriweather', serif"
+}

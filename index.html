@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogdan - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header id="profile-container">
+            <!-- Profile info will be injected here -->
+            <h1 id="name">Loading...</h1>
+            <p id="description"></p>
+            <a id="linkedin" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </header>
+
+        <main>
+            <div id="calendar-container">
+                <h2>Archive</h2>
+                <div id="calendar-controls">
+                    <button id="prev-month">&lt;</button>
+                    <span id="current-month-label"></span>
+                    <button id="next-month">&gt;</button>
+                </div>
+                <div id="calendar-grid">
+                    <!-- Calendar days will be injected here -->
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Style generated on: <span id="style-date">Today</span></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

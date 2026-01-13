@@ -1,0 +1,86 @@
+:root {
+    /* Default Theme (will be overridden by JS) */
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --accent-color: #3b82f6;
+    --font-family: 'Inter', system-ui, sans-serif;
+    --card-bg: #f3f4f6;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#app {
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#calendar-container {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+#calendar-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.calendar-day {
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: opacity 0.2s;
+}
+
+.calendar-day:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.calendar-day.active {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.calendar-day.empty {
+    cursor: default;
+    pointer-events: none;
+}
