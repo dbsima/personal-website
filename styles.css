@@ -412,7 +412,29 @@ footer a {
         position: relative;
         bottom: auto;
         right: auto;
+        left: auto;
+        /* Fix left positioning reset */
         text-align: center;
         margin-top: 2rem;
+    }
+
+    /* Force single column for all layouts on mobile due to specificity issues */
+    #app[data-layout="reversed"],
+    #app[data-layout="stacked"],
+    #app[data-layout="hero"] {
+        grid-template-columns: 1fr;
+    }
+
+    /* Reset layout ordering on mobile so Profile is always top */
+    #app[data-layout="reversed"] header,
+    #app[data-layout="reversed"] #experience-list {
+        order: unset;
+        text-align: left;
+        /* Optional: reset text alignment too if needed, but let's stick to order first */
+    }
+
+    #app[data-layout="reversed"] header {
+        text-align: left;
+        /* Reset text align for mobile consistency */
     }
 }
