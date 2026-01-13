@@ -34,26 +34,47 @@ body {
     width: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 8rem 2rem 4rem;
+    padding: 6rem 1rem;
     display: grid;
-    gap: 4rem;
-    align-items: center;
+    gap: 1.5rem;
+    /* Tighter gap for bento feel */
+    align-items: start;
+    /* Align to top */
     min-height: 100vh;
     /* Default: Split */
     grid-template-columns: 1fr 1fr;
     transition: all 0.5s ease-in-out;
 }
 
+/* Bento Card Style */
+.bento-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* Subtle border */
+    border-radius: 24px;
+    /* Rounded corners */
+    padding: 3rem;
+    backdrop-filter: blur(10px);
+    height: 100%;
+    /* Fill grid cell */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 /* Layout Variations */
 
 /* 1. Reversed: Experience Left, Profile Right */
 #app[data-layout="reversed"] {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 0.8fr;
+    /* Asymmetric bento */
 }
 
 #app[data-layout="reversed"] header {
     order: 2;
-    text-align: right;
+    text-align: left;
+    /* Reset text align inside card */
 }
 
 #app[data-layout="reversed"] #experience-list {
@@ -64,18 +85,15 @@ body {
 #app[data-layout="stacked"] {
     grid-template-columns: 1fr;
     max-width: 800px;
-    text-align: center;
+    gap: 2rem;
 }
 
 #app[data-layout="stacked"] header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
 
-#app[data-layout="stacked"] #experience-list {
-    align-items: center;
-    /* Center flex items */
-}
+/* Removed empty #experience-list rule */
 
 #app[data-layout="stacked"] .experience-item {
     border-left: none;
@@ -88,7 +106,15 @@ body {
 /* 3. Hero: Large Profile Top, Experience Bottom */
 #app[data-layout="hero"] {
     grid-template-columns: 1fr;
-    gap: 4rem;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+}
+
+#app[data-layout="hero"] header {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 6rem 3rem;
+    /* Hero card feel */
 }
 
 #app[data-layout="hero"] header h1 {
@@ -97,7 +123,7 @@ body {
 }
 
 #app[data-layout="hero"] #experience-list {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     width: 100%;
 }
