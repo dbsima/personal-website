@@ -1,30 +1,30 @@
 {
     "palettes": [
         {
-            "name": "Noir",
+            "name": "Cream",
             "colors": {
-                "--bg-color": "#0a0a0a",
-                "--text-color": "#ededed",
-                "--accent-color": "#ffffff",
-                "--card-bg": "rgba(255,255,255,0.03)"
+                "--bg-color": "#faf9f6",
+                "--text-color": "#1a1a1a",
+                "--accent-color": "#2563eb",
+                "--card-bg": "rgba(0,0,0,0.03)"
             }
         },
         {
-            "name": "Obsidian",
+            "name": "Warm White",
             "colors": {
-                "--bg-color": "#111111",
-                "--text-color": "#a1a1aa",
-                "--accent-color": "#eab308",
-                "--card-bg": "#18181b"
+                "--bg-color": "#fffbf5",
+                "--text-color": "#292524",
+                "--accent-color": "#b45309",
+                "--card-bg": "#fef3c7"
             }
         },
         {
-            "name": "Midnight Blue",
+            "name": "Cool Gray",
             "colors": {
-                "--bg-color": "#020617",
-                "--text-color": "#cbd5e1",
-                "--accent-color": "#38bdf8",
-                "--card-bg": "#0f172a"
+                "--bg-color": "#f8fafc",
+                "--text-color": "#0f172a",
+                "--accent-color": "#0ea5e9",
+                "--card-bg": "#e2e8f0"
             }
         },
         {
@@ -46,21 +46,21 @@
             }
         },
         {
-            "name": "Slate",
+            "name": "Sage",
             "colors": {
-                "--bg-color": "#1e293b",
-                "--text-color": "#f1f5f9",
-                "--accent-color": "#94a3b8",
-                "--card-bg": "#334155"
+                "--bg-color": "#f5f7f4",
+                "--text-color": "#1e3a2f",
+                "--accent-color": "#16a34a",
+                "--card-bg": "#ecfdf5"
             }
         },
         {
-            "name": "Sand",
+            "name": "Lavender",
             "colors": {
-                "--bg-color": "#292524",
-                "--text-color": "#e7e5e4",
-                "--accent-color": "#d6d3d1",
-                "--card-bg": "#44403c"
+                "--bg-color": "#faf5ff",
+                "--text-color": "#2e1065",
+                "--accent-color": "#9333ea",
+                "--card-bg": "#f3e8ff"
             }
         }
     ],
