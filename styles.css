@@ -228,11 +228,17 @@ h1 i {
     max-width: 60ch;
 }
 
-/* Calendar Toggle Button */
-#calendar-toggle-btn {
+/* Floating Action Buttons Container */
+#fab-container {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
+    display: flex;
+    gap: 0.75rem;
+    z-index: 1010;
+}
+
+#fab-container button {
     background: #111827;
     color: #ffffff;
     border: none;
@@ -242,19 +248,26 @@ h1 i {
     align-items: center;
     gap: 0.5rem;
     font-family: var(--body-font);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-    z-index: 1010;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-#calendar-toggle-btn:hover {
+#fab-container button:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+#remix-btn {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+}
+
+#remix-btn:hover {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
 }
 
 /* Calendar Popover (No Overlay) */
