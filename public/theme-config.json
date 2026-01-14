@@ -62,6 +62,42 @@
                 "--accent-color": "#9333ea",
                 "--card-bg": "#f3e8ff"
             }
+        },
+        {
+            "name": "Sky Blue",
+            "colors": {
+                "--bg-color": "#f0f9ff",
+                "--text-color": "#0c4a6e",
+                "--accent-color": "#0284c7",
+                "--card-bg": "#e0f2fe"
+            }
+        },
+        {
+            "name": "Coffee",
+            "colors": {
+                "--bg-color": "#faf6f1",
+                "--text-color": "#3d2314",
+                "--accent-color": "#78350f",
+                "--card-bg": "#fde8d8"
+            }
+        },
+        {
+            "name": "Golden",
+            "colors": {
+                "--bg-color": "#fefce8",
+                "--text-color": "#422006",
+                "--accent-color": "#ca8a04",
+                "--card-bg": "#fef9c3"
+            }
+        },
+        {
+            "name": "Sunset",
+            "colors": {
+                "--bg-color": "#fff7ed",
+                "--text-color": "#431407",
+                "--accent-color": "#ea580c",
+                "--card-bg": "#ffedd5"
+            }
         }
     ],
     "fontPairings": [
