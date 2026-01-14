@@ -89,7 +89,6 @@ body {
 }
 
 #app[data-layout="stacked"] header {
-    text-align: center;
     margin-bottom: 0;
 }
 
@@ -112,7 +111,6 @@ body {
 
 #app[data-layout="hero"] header {
     grid-column: 1 / -1;
-    text-align: center;
     padding: 6rem 3rem;
     /* Hero card feel */
 }
