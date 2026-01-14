@@ -271,13 +271,6 @@ h1 i {
 #fab-container button:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-#remix-btn {
-    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-}
-
-#remix-btn:hover {
     background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
 }
 
