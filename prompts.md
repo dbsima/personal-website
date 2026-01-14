@@ -9,6 +9,7 @@ This file documents the evolution of the project through the prompts and request
 - **Data Structure**: Use a `profile.json` file for personal information and an archive system for daily themes.
 - **Theming**: Implement a system that generates and applies a new aesthetic (colors + fonts) every day.
 - **Automation**: Create a Node.js script (`scripts/generate-theme.js`) to generate theme JSON files and a GitHub Workflow (`daily-theme.yml`) to automate this daily at midnight.
+- **Shared Config**: Centralize palettes, fonts, and layouts in `public/theme-config.json` so browser code and Node.js scripts share the same source of truth.
 - **Typography**: Use premium font pairings like 'Fraunces' (serif) and 'Inter' (sans-serif).
 
 ## Features & Logic

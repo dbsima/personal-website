@@ -1,36 +1,38 @@
 console.log('Script loaded');
 
 const ARCHIVE_PATH = 'public/archive/';
+const CONFIG_PATH = 'public/theme-config.json';
 let currentCalendarDate = new Date();
 
-// Client-side theme options (mirrored from generate-theme.js)
-const PALETTES = [
-    { name: "Noir", colors: { "--bg-color": "#0a0a0a", "--text-color": "#ededed", "--accent-color": "#ffffff", "--card-bg": "rgba(255,255,255,0.03)" } },
-    { name: "Obsidian", colors: { "--bg-color": "#111111", "--text-color": "#a1a1aa", "--accent-color": "#eab308", "--card-bg": "#18181b" } },
-    { name: "Midnight Blue", colors: { "--bg-color": "#020617", "--text-color": "#cbd5e1", "--accent-color": "#38bdf8", "--card-bg": "#0f172a" } },
-    { name: "Deep Forest", colors: { "--bg-color": "#052e16", "--text-color": "#dcfce7", "--accent-color": "#4ade80", "--card-bg": "#064e3b" } },
-    { name: "Swiss Style", colors: { "--bg-color": "#ffffff", "--text-color": "#171717", "--accent-color": "#dc2626", "--card-bg": "#f5f5f5" } },
-    { name: "Slate", colors: { "--bg-color": "#1e293b", "--text-color": "#f1f5f9", "--accent-color": "#94a3b8", "--card-bg": "#334155" } },
-    { name: "Sand", colors: { "--bg-color": "#292524", "--text-color": "#e7e5e4", "--accent-color": "#d6d3d1", "--card-bg": "#44403c" } }
-];
+// Theme config loaded from shared JSON
+let themeConfig = null;
 
-const FONT_PAIRINGS = [
-    { name: "Modern Editorial", fonts: { "--heading-font": "'Playfair Display', serif", "--body-font": "'Inter', sans-serif" } },
-    { name: "Tech Brutalist", fonts: { "--heading-font": "'Space Grotesk', sans-serif", "--body-font": "'Space Grotesk', sans-serif" } },
-    { name: "Classic Elegant", fonts: { "--heading-font": "'Cinzel', serif", "--body-font": "'Inter', sans-serif" } },
-    { name: "Soft Humanist", fonts: { "--heading-font": "'Fraunces', serif", "--body-font": "'Inter', sans-serif" } }
-];
-
-const LAYOUTS = ["split", "reversed", "stacked", "hero"];
+async function loadThemeConfig() {
+    try {
+        const response = await fetch(CONFIG_PATH);
+        if (!response.ok) throw new Error('Failed to load theme config');
+        themeConfig = await response.json();
+    } catch (error) {
+        console.error('Error loading theme config:', error);
+        // Fallback minimal config
+        themeConfig = {
+            palettes: [{ name: "Default", colors: { "--bg-color": "#0f172a", "--text-color": "#e2e8f0", "--accent-color": "#38bdf8", "--card-bg": "rgba(255,255,255,0.05)" } }],
+            fontPairings: [{ name: "Default", fonts: { "--heading-font": "'Inter', sans-serif", "--body-font": "'Inter', sans-serif" } }],
+            layouts: ["split"]
+        };
+    }
+}
 
 function getRandomItem(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
 function generateRandomTheme() {
-    const palette = getRandomItem(PALETTES);
-    const fontPairing = getRandomItem(FONT_PAIRINGS);
-    const layout = getRandomItem(LAYOUTS);
+    if (!themeConfig) return null;
+
+    const palette = getRandomItem(themeConfig.palettes);
+    const fontPairing = getRandomItem(themeConfig.fontPairings);
+    const layout = getRandomItem(themeConfig.layouts);
 
     return {
         date: "Remixed",
@@ -49,15 +51,20 @@ function initRemix() {
     if (remixBtn) {
         remixBtn.addEventListener('click', () => {
             const theme = generateRandomTheme();
-            applyTheme(theme);
-            updateDateDisplay(theme.date);
-            // Clear URL param since this is a remix
-            window.history.pushState({}, '', window.location.pathname);
+            if (theme) {
+                applyTheme(theme);
+                updateDateDisplay(theme.date);
+                // Clear URL param since this is a remix
+                window.history.pushState({}, '', window.location.pathname);
+            }
         });
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    // Load shared config first
+    await loadThemeConfig();
+
     loadProfile();
 
     // Check URL params
@@ -67,9 +74,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (dateParam && dateParam.length === 8) {
         // Convert YYYYMMDD -> YYYY-MM-DD
         const formattedDate = `${dateParam.slice(0, 4)}-${dateParam.slice(4, 6)}-${dateParam.slice(6, 8)}`;
-        loadTheme(formattedDate, false); // Don't push state on initial load if we want (or maybe we do is fine)
+        loadTheme(formattedDate, false);
     } else {
-        loadTheme('latest'); // Load today's theme by default
+        loadTheme('latest');
     }
 
     initCalendar();

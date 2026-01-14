@@ -1,16 +1,16 @@
 {
   "date": "2026-01-14",
-  "name": "Sand x Classic Elegant",
+  "name": "Sand x Soft Humanist",
   "layout": "split",
   "colors": {
     "--bg-color": "#292524",
     "--text-color": "#e7e5e4",
     "--accent-color": "#d6d3d1",
     "--card-bg": "#44403c",
-    "--heading-font": "'Cinzel', serif",
+    "--heading-font": "'Fraunces', serif",
     "--body-font": "'Inter', sans-serif"
   },
   "paletteName": "Sand",
-  "fontName": "Classic Elegant",
+  "fontName": "Soft Humanist",
   "font": "'Inter', sans-serif"
 }
