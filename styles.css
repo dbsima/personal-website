@@ -150,9 +150,20 @@ h1 i {
 
 #description {
     font-size: 1.25rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     opacity: 0.8;
     font-weight: 300;
+}
+
+#quote {
+    font-family: var(--heading-font);
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    opacity: 0.9;
+    margin-bottom: 2rem;
+    max-width: 45ch;
+    line-height: 1.5;
 }
 
 #social-links {

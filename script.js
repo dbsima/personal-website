@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadThemeConfig();
 
     loadProfile();
+    loadRandomQuote();
 
     // Check URL params
     const urlParams = new URLSearchParams(window.location.search);
@@ -83,6 +84,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     initRemix();
     initInteractions();
 });
+
+async function loadRandomQuote() {
+    try {
+        const response = await fetch('public/quotes.json');
+        if (!response.ok) throw new Error('Failed to load quotes');
+        const data = await response.json();
+
+        const quoteEl = document.getElementById('quote');
+        if (quoteEl && data.quotes && data.quotes.length > 0) {
+            const randomQuote = data.quotes[Math.floor(Math.random() * data.quotes.length)];
+            quoteEl.textContent = `"${randomQuote}"`;
+        }
+    } catch (error) {
+        console.error('Error loading quotes:', error);
+    }
+}
 
 function initInteractions() {
     // 1. Variable Font Interaction for H1

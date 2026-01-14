@@ -20,6 +20,7 @@ This file documents the evolution of the project through the prompts and request
 - **Theme Fallback**: Implement logic to load a default or fallback style if the theme for a specific date is missing.
 - **Remix Button**: Add a floating "Remix" button that lets users trigger a one-time random reshuffle of CSS variables (palette, font, layout) if they don't like the current style.
 - **Social Integration**: Add LinkedIn and GitHub profile links with consistent styling.
+- **Quote**: Add a random quote in the header. Each time the page reloads, the quote changes.
 
 ## Design & Aesthetics
 - **Bento Grid**: Refactor the layout of the Experience section into a modular Bento Grid system with rounded corners and consistent padding.
