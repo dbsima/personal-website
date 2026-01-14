@@ -172,6 +172,7 @@ h1 i {
     flex-wrap: wrap;
 }
 
+#playbook,
 #linkedin,
 #github {
     display: inline-block;
@@ -185,6 +186,7 @@ h1 i {
     text-decoration: none;
 }
 
+#playbook:hover,
 #linkedin:hover,
 #github:hover {
     background: var(--accent-color);
