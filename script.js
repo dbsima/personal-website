@@ -53,7 +53,7 @@ function initRemix() {
             const theme = generateRandomTheme();
             if (theme) {
                 applyTheme(theme);
-                updateDateDisplay(theme.date);
+                updateDateDisplay(theme.date, theme.name);
                 // Clear URL param since this is a remix
                 window.history.pushState({}, '', window.location.pathname);
             }
@@ -192,7 +192,7 @@ async function loadTheme(dateOrIdentifier, updateUrl = true) {
 
         const theme = await response.json();
         applyTheme(theme);
-        updateDateDisplay(theme.date);
+        updateDateDisplay(theme.date, theme.name);
 
         // Update URL: YYYY-MM-DD -> YYYYMMDD
         if (updateUrl && theme.date) {
@@ -227,10 +227,14 @@ function applyTheme(theme) {
     }
 }
 
-function updateDateDisplay(dateString) {
-    const display = document.getElementById('style-date');
-    if (display) {
-        display.textContent = dateString;
+function updateDateDisplay(dateString, themeName) {
+    const dateEl = document.getElementById('style-date');
+    const nameEl = document.getElementById('style-name');
+    if (dateEl) {
+        dateEl.textContent = dateString;
+    }
+    if (nameEl && themeName) {
+        nameEl.textContent = themeName;
     }
 }
 
