@@ -98,6 +98,96 @@
                 "--accent-color": "#ea580c",
                 "--card-bg": "#ffedd5"
             }
+        },
+        {
+            "name": "Mint",
+            "colors": {
+                "--bg-color": "#f0fdfa",
+                "--text-color": "#134e4a",
+                "--accent-color": "#14b8a6",
+                "--card-bg": "#ccfbf1"
+            }
+        },
+        {
+            "name": "Peach",
+            "colors": {
+                "--bg-color": "#fef5f1",
+                "--text-color": "#7c2d12",
+                "--accent-color": "#f97316",
+                "--card-bg": "#fed7aa"
+            }
+        },
+        {
+            "name": "Rose",
+            "colors": {
+                "--bg-color": "#fff1f2",
+                "--text-color": "#4c0519",
+                "--accent-color": "#e11d48",
+                "--card-bg": "#fecdd3"
+            }
+        },
+        {
+            "name": "Seafoam",
+            "colors": {
+                "--bg-color": "#ecfeff",
+                "--text-color": "#164e63",
+                "--accent-color": "#06b6d4",
+                "--card-bg": "#cffafe"
+            }
+        },
+        {
+            "name": "Ivory",
+            "colors": {
+                "--bg-color": "#fffef7",
+                "--text-color": "#1c1917",
+                "--accent-color": "#57534e",
+                "--card-bg": "#fafaf9"
+            }
+        },
+        {
+            "name": "Blush",
+            "colors": {
+                "--bg-color": "#fdf2f8",
+                "--text-color": "#500724",
+                "--accent-color": "#db2777",
+                "--card-bg": "#fce7f3"
+            }
+        },
+        {
+            "name": "Pearl",
+            "colors": {
+                "--bg-color": "#fafafa",
+                "--text-color": "#18181b",
+                "--accent-color": "#71717a",
+                "--card-bg": "#f4f4f5"
+            }
+        },
+        {
+            "name": "Honey",
+            "colors": {
+                "--bg-color": "#fefcf3",
+                "--text-color": "#451a03",
+                "--accent-color": "#d97706",
+                "--card-bg": "#fef3c7"
+            }
+        },
+        {
+            "name": "Powder Blue",
+            "colors": {
+                "--bg-color": "#eff6ff",
+                "--text-color": "#1e3a8a",
+                "--accent-color": "#3b82f6",
+                "--card-bg": "#dbeafe"
+            }
+        },
+        {
+            "name": "Champagne",
+            "colors": {
+                "--bg-color": "#fefaf5",
+                "--text-color": "#292524",
+                "--accent-color": "#a16207",
+                "--card-bg": "#fef9e7"
+            }
         }
     ],
     "fontPairings": [
