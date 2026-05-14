@@ -1,0 +1,373 @@
+/* Premium Aesthetic System for Homepage Redesign */
+
+:root {
+    --bg-gradient-top: #ffffff;
+    --bg-gradient-bottom: #f3f4f6;
+    --text-main: #111827;
+    --text-muted: #4b5563;
+    --text-light: #9ca3af;
+    --accent-dark: #0f172a;
+    --border-color: rgba(0, 0, 0, 0.06);
+    --font-main: 'Sono', monospace, sans-serif;
+    --font-heading: 'Goudy Bookletter 1911', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(180deg, var(--bg-gradient-top) 0%, var(--bg-gradient-bottom) 100%);
+    color: var(--text-main);
+    font-family: var(--font-main);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Main Container */
+.main-wrapper {
+    width: 100%;
+    max-width: 800px;
+    padding: 4rem 1.5rem 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.8rem, 8vw, 4.2rem);
+    font-weight: 400;
+    line-height: 1.05;
+    color: var(--text-main);
+    margin-bottom: 0.8rem;
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 3vw, 1.15rem);
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111827;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px -4px rgba(17, 24, 39, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -4px rgba(17, 24, 39, 0.4);
+    background-color: #1f2937;
+}
+
+/* Portrait Artwork Section */
+.artwork-container {
+    position: relative;
+    width: 100%;
+    max-width: 820px;
+    margin: 1rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 1s ease-out 0.2s both;
+}
+
+.portrait-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    /* Apply sleek monochrome look matching the design inspiration */
+    filter: grayscale(100%) contrast(112%) brightness(102%);
+    /* Beautiful bottom gradient fade */
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Floating Glass Icons */
+.glass-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        0 4px 10px -1px rgba(0, 0, 0, 0.06),
+        0 16px 28px -4px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    z-index: 10;
+    animation: floatAnim 6s ease-in-out infinite alternate;
+}
+
+/* Arc Positioning around portrait */
+.icon-framer {
+    top: 45%;
+    left: 2%;
+    animation-delay: 0s;
+}
+
+.icon-figma {
+    top: 10%;
+    left: 15%;
+    animation-delay: -1.5s;
+}
+
+.icon-cube {
+    top: 6%;
+    right: 15%;
+    animation-delay: -3s;
+}
+
+.icon-notion {
+    top: 42%;
+    right: 2%;
+    animation-delay: -4.5s;
+}
+
+.glass-icon svg {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.glass-icon:hover svg {
+    transform: scale(1.15);
+}
+
+/* Content Blocks Layout */
+.content-section {
+    width: 100%;
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 1rem;
+    animation: fadeIn 1s ease-out 0.4s both;
+}
+
+.content-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.badge-red {
+    background-color: #fee2e2;
+    color: #dc2626;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.badge-green {
+    background-color: #dcfce7;
+    color: #16a34a;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.block-title {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    color: var(--text-main);
+}
+
+.block-body p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 1.2rem;
+}
+
+.block-body p:last-child {
+    margin-bottom: 0;
+}
+
+/* Inline Glassmorphism Link / Logo */
+.luna-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+    vertical-align: middle;
+}
+
+.luna-link:hover {
+    color: var(--accent-dark);
+    text-decoration: underline;
+}
+
+.luna-icon-wrapper {
+    width: 28px;
+    height: 28px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        0 2px 5px -1px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.luna-link:hover .luna-icon-wrapper {
+    transform: translateY(-1px) scale(1.08);
+    box-shadow:
+        0 4px 8px -1px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.luna-icon-wrapper img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Footer Section */
+.page-footer {
+    margin-top: 5rem;
+    padding: 2rem 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+
+.page-footer p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.page-footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.page-footer a:hover {
+    color: var(--text-main);
+    text-decoration: underline;
+}
+
+.page-footer ion-icon {
+    font-size: 1.1rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 0.8rem;
+}
+
+.badge-red ion-icon,
+.badge-green ion-icon {
+    font-size: 1.15rem;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatAnim {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(1deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(-1deg);
+    }
+}
+
+/* Responsive Overrides */
+@media (max-width: 600px) {
+    .main-wrapper {
+        padding-top: 3.5rem;
+    }
+
+    .icon-framer {
+        left: -2%;
+    }
+
+    .icon-notion {
+        right: -2%;
+    }
+
+    .content-section {
+        gap: 2.5rem;
+    }
+}

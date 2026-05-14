@@ -1,7 +1,7 @@
 console.log('Script loaded');
 
-const ARCHIVE_PATH = 'public/archive/';
-const CONFIG_PATH = 'public/theme-config.json';
+const ARCHIVE_PATH = '/public/archive/';
+const CONFIG_PATH = '/public/theme-config.json';
 let currentCalendarDate = new Date();
 
 // Theme config loaded from shared JSON
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 async function loadRandomQuote() {
     try {
-        const response = await fetch('public/quotes.json');
+        const response = await fetch('/public/quotes.json');
         if (!response.ok) throw new Error('Failed to load quotes');
         const data = await response.json();
 
@@ -149,7 +149,7 @@ function initInteractions() {
 
 async function loadProfile() {
     try {
-        const response = await fetch('public/profile.json');
+        const response = await fetch('/public/profile.json');
         if (!response.ok) throw new Error('Failed to load profile');
         const data = await response.json();
 
