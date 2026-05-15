@@ -1,0 +1,16 @@
+{
+  "date": "2026-01-15",
+  "name": "Lavender x Soft Humanist",
+  "layout": "stacked",
+  "colors": {
+    "--bg-color": "#faf5ff",
+    "--text-color": "#2e1065",
+    "--accent-color": "#9333ea",
+    "--card-bg": "#f3e8ff",
+    "--heading-font": "'Fraunces', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Lavender",
+  "fontName": "Soft Humanist",
+  "font": "'Inter', sans-serif"
+}

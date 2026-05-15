@@ -1,0 +1,16 @@
+{
+  "date": "2026-04-02",
+  "name": "Champagne x Modern Editorial",
+  "layout": "stacked",
+  "colors": {
+    "--bg-color": "#fefaf5",
+    "--text-color": "#292524",
+    "--accent-color": "#a16207",
+    "--card-bg": "#fef9e7",
+    "--heading-font": "'Playfair Display', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Champagne",
+  "fontName": "Modern Editorial",
+  "font": "'Inter', sans-serif"
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-03-12",
+  "name": "Cool Gray x Tech Brutalist",
+  "layout": "hero",
+  "colors": {
+    "--bg-color": "#f8fafc",
+    "--text-color": "#0f172a",
+    "--accent-color": "#0ea5e9",
+    "--card-bg": "#e2e8f0",
+    "--heading-font": "'Space Grotesk', sans-serif",
+    "--body-font": "'Space Grotesk', sans-serif"
+  },
+  "paletteName": "Cool Gray",
+  "fontName": "Tech Brutalist",
+  "font": "'Space Grotesk', sans-serif"
+}

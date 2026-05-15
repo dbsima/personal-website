@@ -1,0 +1,16 @@
+{
+  "date": "2026-03-03",
+  "name": "Blush x Modern Editorial",
+  "layout": "hero",
+  "colors": {
+    "--bg-color": "#fdf2f8",
+    "--text-color": "#500724",
+    "--accent-color": "#db2777",
+    "--card-bg": "#fce7f3",
+    "--heading-font": "'Playfair Display', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Blush",
+  "fontName": "Modern Editorial",
+  "font": "'Inter', sans-serif"
+}

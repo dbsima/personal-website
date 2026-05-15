@@ -1,0 +1,16 @@
+{
+  "date": "2026-05-01",
+  "name": "Ivory x Tech Brutalist",
+  "layout": "hero",
+  "colors": {
+    "--bg-color": "#fffef7",
+    "--text-color": "#1c1917",
+    "--accent-color": "#57534e",
+    "--card-bg": "#fafaf9",
+    "--heading-font": "'Space Grotesk', sans-serif",
+    "--body-font": "'Space Grotesk', sans-serif"
+  },
+  "paletteName": "Ivory",
+  "fontName": "Tech Brutalist",
+  "font": "'Space Grotesk', sans-serif"
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-03-30",
+  "name": "Honey x Classic Elegant",
+  "layout": "stacked",
+  "colors": {
+    "--bg-color": "#fefcf3",
+    "--text-color": "#451a03",
+    "--accent-color": "#d97706",
+    "--card-bg": "#fef3c7",
+    "--heading-font": "'Cinzel', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Honey",
+  "fontName": "Classic Elegant",
+  "font": "'Inter', sans-serif"
+}

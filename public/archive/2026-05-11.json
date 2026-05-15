@@ -1,0 +1,16 @@
+{
+  "date": "2026-05-11",
+  "name": "Ivory x Soft Humanist",
+  "layout": "hero",
+  "colors": {
+    "--bg-color": "#fffef7",
+    "--text-color": "#1c1917",
+    "--accent-color": "#57534e",
+    "--card-bg": "#fafaf9",
+    "--heading-font": "'Fraunces', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Ivory",
+  "fontName": "Soft Humanist",
+  "font": "'Inter', sans-serif"
+}

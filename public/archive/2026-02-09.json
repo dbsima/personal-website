@@ -1,0 +1,16 @@
+{
+  "date": "2026-02-09",
+  "name": "Golden x Modern Editorial",
+  "layout": "reversed",
+  "colors": {
+    "--bg-color": "#fefce8",
+    "--text-color": "#422006",
+    "--accent-color": "#ca8a04",
+    "--card-bg": "#fef9c3",
+    "--heading-font": "'Playfair Display', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Golden",
+  "fontName": "Modern Editorial",
+  "font": "'Inter', sans-serif"
+}

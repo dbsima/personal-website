@@ -1,0 +1,16 @@
+{
+  "date": "2026-04-25",
+  "name": "Honey x Tech Brutalist",
+  "layout": "split",
+  "colors": {
+    "--bg-color": "#fefcf3",
+    "--text-color": "#451a03",
+    "--accent-color": "#d97706",
+    "--card-bg": "#fef3c7",
+    "--heading-font": "'Space Grotesk', sans-serif",
+    "--body-font": "'Space Grotesk', sans-serif"
+  },
+  "paletteName": "Honey",
+  "fontName": "Tech Brutalist",
+  "font": "'Space Grotesk', sans-serif"
+}

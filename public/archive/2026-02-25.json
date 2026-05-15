@@ -1,0 +1,16 @@
+{
+  "date": "2026-02-25",
+  "name": "Ivory x Modern Editorial",
+  "layout": "reversed",
+  "colors": {
+    "--bg-color": "#fffef7",
+    "--text-color": "#1c1917",
+    "--accent-color": "#57534e",
+    "--card-bg": "#fafaf9",
+    "--heading-font": "'Playfair Display', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Ivory",
+  "fontName": "Modern Editorial",
+  "font": "'Inter', sans-serif"
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-03-13",
+  "name": "Rose x Classic Elegant",
+  "layout": "hero",
+  "colors": {
+    "--bg-color": "#fff1f2",
+    "--text-color": "#4c0519",
+    "--accent-color": "#e11d48",
+    "--card-bg": "#fecdd3",
+    "--heading-font": "'Cinzel', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Rose",
+  "fontName": "Classic Elegant",
+  "font": "'Inter', sans-serif"
+}

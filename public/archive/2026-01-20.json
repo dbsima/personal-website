@@ -1,0 +1,16 @@
+{
+  "date": "2026-01-20",
+  "name": "Sunset x Classic Elegant",
+  "layout": "reversed",
+  "colors": {
+    "--bg-color": "#fff7ed",
+    "--text-color": "#431407",
+    "--accent-color": "#ea580c",
+    "--card-bg": "#ffedd5",
+    "--heading-font": "'Cinzel', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Sunset",
+  "fontName": "Classic Elegant",
+  "font": "'Inter', sans-serif"
+}

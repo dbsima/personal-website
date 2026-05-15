@@ -1,0 +1,16 @@
+{
+  "date": "2026-01-30",
+  "name": "Lavender x Tech Brutalist",
+  "layout": "reversed",
+  "colors": {
+    "--bg-color": "#faf5ff",
+    "--text-color": "#2e1065",
+    "--accent-color": "#9333ea",
+    "--card-bg": "#f3e8ff",
+    "--heading-font": "'Space Grotesk', sans-serif",
+    "--body-font": "'Space Grotesk', sans-serif"
+  },
+  "paletteName": "Lavender",
+  "fontName": "Tech Brutalist",
+  "font": "'Space Grotesk', sans-serif"
+}

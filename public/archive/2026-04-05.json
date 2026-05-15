@@ -1,0 +1,16 @@
+{
+  "date": "2026-04-05",
+  "name": "Pearl x Classic Elegant",
+  "layout": "split",
+  "colors": {
+    "--bg-color": "#fafafa",
+    "--text-color": "#18181b",
+    "--accent-color": "#71717a",
+    "--card-bg": "#f4f4f5",
+    "--heading-font": "'Cinzel', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Pearl",
+  "fontName": "Classic Elegant",
+  "font": "'Inter', sans-serif"
+}

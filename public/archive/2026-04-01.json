@@ -1,0 +1,16 @@
+{
+  "date": "2026-04-01",
+  "name": "Champagne x Soft Humanist",
+  "layout": "split",
+  "colors": {
+    "--bg-color": "#fefaf5",
+    "--text-color": "#292524",
+    "--accent-color": "#a16207",
+    "--card-bg": "#fef9e7",
+    "--heading-font": "'Fraunces', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Champagne",
+  "fontName": "Soft Humanist",
+  "font": "'Inter', sans-serif"
+}

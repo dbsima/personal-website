@@ -1,0 +1,16 @@
+{
+  "date": "2026-03-26",
+  "name": "Blush x Tech Brutalist",
+  "layout": "stacked",
+  "colors": {
+    "--bg-color": "#fdf2f8",
+    "--text-color": "#500724",
+    "--accent-color": "#db2777",
+    "--card-bg": "#fce7f3",
+    "--heading-font": "'Space Grotesk', sans-serif",
+    "--body-font": "'Space Grotesk', sans-serif"
+  },
+  "paletteName": "Blush",
+  "fontName": "Tech Brutalist",
+  "font": "'Space Grotesk', sans-serif"
+}

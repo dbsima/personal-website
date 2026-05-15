@@ -1,0 +1,16 @@
+{
+  "date": "2026-02-11",
+  "name": "Sky Blue x Soft Humanist",
+  "layout": "split",
+  "colors": {
+    "--bg-color": "#f0f9ff",
+    "--text-color": "#0c4a6e",
+    "--accent-color": "#0284c7",
+    "--card-bg": "#e0f2fe",
+    "--heading-font": "'Fraunces', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Sky Blue",
+  "fontName": "Soft Humanist",
+  "font": "'Inter', sans-serif"
+}

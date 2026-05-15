@@ -1,0 +1,16 @@
+{
+  "date": "2026-02-16",
+  "name": "Cool Gray x Soft Humanist",
+  "layout": "split",
+  "colors": {
+    "--bg-color": "#f8fafc",
+    "--text-color": "#0f172a",
+    "--accent-color": "#0ea5e9",
+    "--card-bg": "#e2e8f0",
+    "--heading-font": "'Fraunces', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Cool Gray",
+  "fontName": "Soft Humanist",
+  "font": "'Inter', sans-serif"
+}

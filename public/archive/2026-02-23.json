@@ -1,0 +1,16 @@
+{
+  "date": "2026-02-23",
+  "name": "Sunset x Modern Editorial",
+  "layout": "stacked",
+  "colors": {
+    "--bg-color": "#fff7ed",
+    "--text-color": "#431407",
+    "--accent-color": "#ea580c",
+    "--card-bg": "#ffedd5",
+    "--heading-font": "'Playfair Display', serif",
+    "--body-font": "'Inter', sans-serif"
+  },
+  "paletteName": "Sunset",
+  "fontName": "Modern Editorial",
+  "font": "'Inter', sans-serif"
+}
