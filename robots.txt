@@ -1,0 +1,24 @@
+User-agent: *
+Disallow: /surprise/
+
+# Explicitly block common LLM/AI crawlers as an extra precaution
+User-agent: CCBot
+Disallow: /surprise/
+
+User-agent: ChatGPT-User
+Disallow: /surprise/
+
+User-agent: GPTBot
+Disallow: /surprise/
+
+User-agent: Google-Extended
+Disallow: /surprise/
+
+User-agent: anthropic-ai
+Disallow: /surprise/
+
+User-agent: OmgiliBot
+Disallow: /surprise/
+
+User-agent: FacebookBot
+Disallow: /surprise/
