@@ -4136,7 +4136,7 @@ var translations = {
         "events.friday.where1": "Mairie du 19ᵉ arrondissement de Paris<br>5-7 Pl. Armand Carrel<br>75019 Paris",
         "events.map_label": "Hartă",
         "events.details_label": "Detalii",
-        "events.friday.details1": "Prima oprire: la Primărie (Mairie) pentru ceremonia civilă! Vino pentru un moment romantic (şi pentru a ne auzi accentul când vom spune 'oui'). Sărbătorește alături de noi ceremonia noastră civilă, ce marchează începutul unui nou capitol, înconjurați de oamenii care contează cel mai mult pentru noi.",
+        "events.friday.details1": "Prima oprire: la Primărie (Mairie) pentru ceremonia civilă! Vino pentru un moment romantic (şi pentru a ne auzi accentul când vom spune 'oui').",
         "events.friday.title2": "Cocktailuri, cină & dans",
         "events.friday.time2": "17:00 - 1:00",
         "events.friday.where2": "Hôtel Restaurant Le Charmant<br>53 Rue du Landy<br>93400 Saint-Ouen-sur-Seine",
