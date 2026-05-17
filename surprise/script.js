@@ -3951,8 +3951,8 @@ function loadVinylPlayer() {
 
 var translations = {
     "en": {
-        "nav.story": "Our Story",
-        "nav.facts": "Fun Facts",
+        "nav.story": "Our story",
+        "nav.facts": "Fun facts",
         "nav.events": "Events",
         "nav.hotels": "Hotels",
         "nav.rsvp": "RSVP",
@@ -4023,7 +4023,7 @@ var translations = {
         "footer.text": "Created with ❤️ by Alina & Bogdan after a bottle of wine. We were inspired by the work of <a href=\"https://danielaandmoe.com/\">Daniela & Moe</a> and <a href=\"https://jackiehu.design/\">Jackie Hu</a>"
     },
     "fr": {
-        "nav.story": "Notre Histoire",
+        "nav.story": "Notre histoire",
         "nav.facts": "Anecdotes",
         "nav.events": "Événements",
         "nav.hotels": "Hébergement",
@@ -4095,14 +4095,14 @@ var translations = {
         "footer.text": "Créé avec ❤️ par Alina & Bogdan après une bouteille de vin. Nous nous sommes inspirés du travail de <a href=\"https://danielaandmoe.com/\">Daniela & Moe</a> et de <a href=\"https://jackiehu.design/\">Jackie Hu</a>"
     },
     "ro": {
-        "nav.story": "Povestea Noastră",
+        "nav.story": "Povestea noastră",
         "nav.facts": "Curiozități",
         "nav.events": "Evenimente",
         "nav.hotels": "Cazare",
         "nav.rsvp": "RSVP",
         "header.vinyl_warning": "Nici să nu te gândești<br>să apeși pe vinil!",
         "header.date": "25 Septembrie 2026",
-        "story.title": "Povestea Noastră",
+        "story.title": "Povestea noastră",
         "story.subtitle": "Spunem 'oui' la Paris.",
         "story.text": "După 16 ani împreună (aproape jumătate din viața noastră) și 10 ani de PACS, am împărtășit mai multe hohote de râs, aventuri și momente frumoase decât am putea număra vreodată. Întâmplarea face ca 2026 să fie și anul în care amândoi am devenit cetățeni francezi 🇫🇷, ceea ce ni s-a părut pretextul perfect pentru o petrecere la Paris. Aceasta nu va fi o nuntă tradițională, ci doar o sărbătoare care seamănă mai degrabă cu o petrecere de zi de naștere. Fără stres. Fără presiune. Fără dress code. Vino exact așa cum ești.",
         "facts.title": "Curiozități",
