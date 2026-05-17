@@ -4029,7 +4029,7 @@ var translations = {
         "nav.events": "Événements",
         "nav.hotels": "Hébergement",
         "nav.rsvp": "RSVP",
-        "header.vinyl_warning": "Ne t'avise surtout pas<br>de cliquer sur le vinyle !",
+        "header.vinyl_warning": "Ne cliquez pas sur le vinyle !",
         "header.date": "25 septembre 2026",
         "story.title": "Notre Histoire",
         "story.subtitle": "Se Dire 'oui' à Paris.",
