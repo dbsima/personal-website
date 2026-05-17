@@ -3854,6 +3854,11 @@ function loadVinylPlayer() {
     ];
 
     var currentSongIndex = 0;
+    if (currentLanguage === "ro") {
+        currentSongIndex = 1;
+    } else if (currentLanguage === "fr") {
+        currentSongIndex = 4;
+    }
     var audio = new Audio();
     var $vinil = $(".js-vinil");
     var $player = $(".js-player");
@@ -3927,6 +3932,21 @@ function loadVinylPlayer() {
         isPlaying = true; // Auto play previous
         updateSong();
     });
+
+    $(window).on("languageChange", function (e, newLang) {
+        if (!isPlaying && audio.paused) {
+            if (newLang === "ro") {
+                currentSongIndex = 1;
+            } else if (newLang === "fr") {
+                currentSongIndex = 4;
+            } else {
+                currentSongIndex = 0;
+            }
+            updateSong();
+        }
+    });
+
+    updateSong();
 }
 
 var translations = {
@@ -4206,6 +4226,7 @@ function changeLanguage(newLang) {
     $("#lang-select-nav").val(newLang);
     $("#lang-select-footer").val(newLang);
     applyTranslations();
+    $(window).trigger("languageChange", [newLang]);
 }
 
 if (document.body.classList.contains("index")) {
