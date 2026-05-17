@@ -4113,7 +4113,7 @@ var translations = {
         "facts.hover": "Treci cursorul",
         "facts.for_answer": "pentru răspuns",
         "facts.fact1_q": "De cât timp ne cunoaștem?",
-        "facts.fact1_a": "De 16 ani și continuăm să numărăm",
+        "facts.fact1_a": "De 16 ani și câteva fire albe",
         "facts.fact2_q": "Unde ne-am cunoscut?",
         "facts.fact2_a": "În Galați, în liceu, dar povestea noastră a început mai târziu în București.",
         "facts.fact3_q": "Mâncarea de suflet?",
