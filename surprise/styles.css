@@ -1046,10 +1046,6 @@ canvas {
 }
 
 .index-header__vinil-text {
-  position: absolute;
-  top: auto;
-  bottom: -30px;
-  left: 50%;
   transform: translateX(-50%);
   width: auto;
   text-align: center;
