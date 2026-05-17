@@ -1741,12 +1741,14 @@ div.index-br-green-dots {
   left: -210px;
   top: -360px;
   zoom: 0.5;
+  opacity: 0.7
 }
 
 @media only screen and (min-width: 770px) {
   .index-marriage__graphic-left {
     top: -240px;
     zoom: 1;
+    opacity: 1
   }
 }
 
@@ -2062,15 +2064,16 @@ div.index-br-green-dots {
 
 .index-event__saturday {
   position: absolute;
-  top: 0px;
   right: -150px;
   z-index: 1;
   zoom: 0.4;
-  opacity: 0.5;
+  opacity: 0.7;
+  top: 400px;
 }
 
 @media only screen and (min-width: 770px) {
   .index-event__saturday {
+    top: 0px;
     zoom: 1;
     right: -90px;
     opacity: 1;
