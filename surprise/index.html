@@ -39,11 +39,18 @@
     <nav class="nav" vocab="http://schema.org/" typeof="SiteNavigationElement" role="navigation"
         style="transform: translateY(0%); will-change: transform, opacity; opacity: 1;">
         <ul class="nav-list">
-            <li><a href="#story">Our Story</a></li>
-            <li><a href="#facts">Fun Facts</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#hotels">Hotels</a></li>
-            <li><a href="#registry">RSVP</a></li>
+            <li><a href="#story" data-i18n="nav.story">Our Story</a></li>
+            <li><a href="#facts" data-i18n="nav.facts">Fun Facts</a></li>
+            <li><a href="#events" data-i18n="nav.events">Events</a></li>
+            <li><a href="#hotels" data-i18n="nav.hotels">Hotels</a></li>
+            <li><a href="#registry" data-i18n="nav.rsvp">RSVP</a></li>
+            <li class="nav-lang-selector">
+                <select id="lang-select-nav" class="lang-select">
+                    <option value="en">EN</option>
+                    <option value="fr">FR</option>
+                    <option value="ro">RO</option>
+                </select>
+            </li>
         </ul>
     </nav>
 
@@ -56,7 +63,7 @@
         </div>
         <div class="index-bg-right">
             <div class="index-header__vinil js-vinil">
-                <span class="index-header__vinil-text">Don't you dare<br>click on the vinyl!</span>
+                <span class="index-header__vinil-text" data-i18n="header.vinyl_warning">Don't you dare<br>click on the vinyl!</span>
                 <img src="/public/marriage/vinil.webp" alt="Vinyl">
             </div>
             <div class="index-header__player js-player">
@@ -88,7 +95,7 @@
                 <img src="/public/marriage/dancing.png" alt="Dancing">
             </div>
             <div class="index-header__subtitle">
-                <h5 style="opacity: 1">September 25th 2026</h5>
+                <h5 style="opacity: 1" data-i18n="header.date">September 25th 2026</h5>
             </div>
         </div>
 
@@ -102,9 +109,9 @@
             <div class="container">
                 <div class="row justify-content-md-center">
                     <div class="col col-md-10">
-                        <h5 class="text-center">Our Story</h5>
-                        <h2 class="text-center">Saying 'oui' à Paris.</h2>
-                        <p class="large">
+                        <h5 class="text-center" data-i18n="story.title">Our Story</h5>
+                        <h2 class="text-center" data-i18n="story.subtitle">Saying 'oui' à Paris.</h2>
+                        <p class="large" data-i18n="story.text">
                             After 16 years together (nearly half our lives) and 10 years of PACS, we’ve shared more
                             laughter, adventures, and beautiful moments than we could ever count. As it happens, 2026 is
                             also the year both of us became French 🇫🇷, which felt like the perfect excuse for a
@@ -122,9 +129,9 @@
             <div class="index-facts__wrapper">
                 <ul class="index-facts__list">
                     <li class="index-fact index-fact__intro">
-                        <h5>Fun Facts</h5>
-                        <h3>Quirky lil quiz about the happy couple</h3>
-                        <h6><span class="d-md-none">Click</span><span class="d-none d-md-inline">Hover</span> for Answer
+                        <h5 data-i18n="facts.title">Fun Facts</h5>
+                        <h3 data-i18n="facts.subtitle">Quirky lil quiz about the happy couple</h3>
+                        <h6><span class="d-md-none" data-i18n="facts.click">Click</span><span class="d-none d-md-inline" data-i18n="facts.hover">Hover</span> <span data-i18n="facts.for_answer">for Answer</span>
                         </h6>
                     </li>
 
@@ -135,10 +142,10 @@
                                     <div class="index-fact__inner-front-icon">
                                         <img src="/public/marriage/calendar-d0eafa06.svg" alt="Calendar">
                                     </div>
-                                    How long have we known each other?
+                                    <span data-i18n="facts.fact1_q">How long have we known each other?</span>
                                 </div>
                             </div>
-                            <div class="index-fact__inner-back">
+                            <div class="index-fact__inner-back" data-i18n="facts.fact1_a">
                                 16 years and counting
                             </div>
                         </div>
@@ -150,10 +157,10 @@
                                     <div class="index-fact__inner-front-icon">
                                         <img src="/public/marriage/svgs/dracula.svg" alt="Mit">
                                     </div>
-                                    Where did we meet?
+                                    <span data-i18n="facts.fact2_q">Where did we meet?</span>
                                 </div>
                             </div>
-                            <div class="index-fact__inner-back">
+                            <div class="index-fact__inner-back" data-i18n="facts.fact2_a">
                                 In Galați, in highschool, but our story starter later on in Bucharest.
                             </div>
                         </div>
@@ -165,10 +172,10 @@
                                     <div class="index-fact__inner-front-icon">
                                         <img src="/public/marriage/svgs/mici.svg" height="140" alt="Wine">
                                     </div>
-                                    Comfort food?
+                                    <span data-i18n="facts.fact3_q">Comfort food?</span>
                                 </div>
                             </div>
-                            <div class="index-fact__inner-back">
+                            <div class="index-fact__inner-back" data-i18n="facts.fact3_a">
                                 French fries with cheese, fried eggs, and a summer salad.
                             </div>
                         </div>
@@ -180,10 +187,10 @@
                                     <div class="index-fact__inner-front-icon">
                                         <img src="/public/marriage/palm-334ee2e3.svg" alt="Palm">
                                     </div>
-                                    Where did we get in engaged?
+                                    <span data-i18n="facts.fact4_q">Where did we get in engaged?</span>
                                 </div>
                             </div>
-                            <div class="index-fact__inner-back">
+                            <div class="index-fact__inner-back" data-i18n="facts.fact4_a">
                                 Milos, Greece
                             </div>
                         </div>
@@ -195,11 +202,11 @@
                                     <div class="index-fact__inner-front-icon">
                                         <img src="/public/marriage/svgs/eiffel-2.svg" alt="Palm">
                                     </div>
-                                    Favorite Paris spot?
+                                    <span data-i18n="facts.fact5_q">Favorite Paris spot?</span>
                                 </div>
                             </div>
                             <div class="index-fact__inner-back">
-                                <div>
+                                <div data-i18n="facts.fact5_a">
                                     Alina: <a target="_blank" href="https://maps.app.goo.gl/tR8tCVfip4kz9QdZ7"><span
                                             class="strikethrough">Malta</span> Parc
                                         des Buttes-Chaumont</a><br>Bogdan: <a target="_blank"
@@ -226,9 +233,9 @@
             <div class="container">
                 <div class="row justify-content-md-center">
                     <div class="col col-md-10">
-                        <h5 class="text-center">Join Us in Paris</h5>
-                        <h2 class="text-center">Marriage Celebration</h2>
-                        <p class="large">
+                        <h5 class="text-center" data-i18n="marriage.title">Join Us in Paris</h5>
+                        <h2 class="text-center" data-i18n="marriage.subtitle">Marriage Celebration</h2>
+                        <p class="large" data-i18n="marriage.text">
                             Join us in Paris this September as we will officially say "oui". We'll be celebrating with
                             the civil ceremony at the 19th Arrondissement City Hall, followed by dinner, drinks and a
                             small party. Can't wait to celebrate with you ! ❤️
@@ -243,10 +250,10 @@
             <div class="">
                 <div class="row justify-content-md-center">
                     <div class="col index-events__intro intro-banger">
-                        <h5 class="text-center banger-top">Fun in the Sun (hopefully)</h5>
+                        <h5 class="text-center banger-top" data-i18n="events.title">Fun in the Sun (hopefully)</h5>
                         <h3 class="">
-                            <span class="banger-1">Weekend</span>
-                            <span class="banger-2">Events</span>
+                            <span class="banger-1" data-i18n="events.subtitle1">Weekend</span>
+                            <span class="banger-2" data-i18n="events.subtitle2">Events</span>
                         </h3>
                     </div>
                 </div>
@@ -257,10 +264,10 @@
                 <header>
                     <div class="row">
                         <div class="col-2 col-md-3">
-                            <h6>Day</h6>
+                            <h6 data-i18n="events.day">Day</h6>
                         </div>
                         <div class="col col-md-9">
-                            <h6>Time / Location / Etc</h6>
+                            <h6 data-i18n="events.details_header">Time / Location / Etc</h6>
                         </div>
                     </div>
                 </header>
@@ -281,46 +288,46 @@
                         <div class="col col-md-3">
                             <div class="row">
                                 <div class="col-2">
-                                    <h6 class="index-event__num">26 Sept</h6>
+                                    <h6 class="index-event__num" data-i18n="events.friday.date">26 Sept</h6>
                                 </div>
                                 <div class="col">
-                                    <h3>Friday</h3>
+                                    <h3 data-i18n="events.friday.name">Friday</h3>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-12 col-md-9">
-                            <h4>Civil Ceremony</h4>
+                            <h4 data-i18n="events.friday.title1">Civil Ceremony</h4>
                             <div class="index-event__detail">
                                 <div class="row">
                                     <div class="col-2 col-md-1">
-                                        <h6>Time</h6>
+                                        <h6 data-i18n="events.time_label">Time</h6>
                                     </div>
                                     <div class="col col-md-8">
-                                        <p>15:15 - 16:15</p>
+                                        <p data-i18n="events.friday.time1">15:15 - 16:15</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="index-event__detail">
                                 <div class="row">
                                     <div class="col-2 col-md-1">
-                                        <h6>Where</h6>
+                                        <h6 data-i18n="events.where_label">Where</h6>
                                     </div>
                                     <div class="col col-md-8">
-                                        <p>Mairie du 19ᵉ arrondissement de Paris<br>5-7 Pl. Armand Carrel<br>75019 Paris
+                                        <p data-i18n="events.friday.where1">Mairie du 19ᵉ arrondissement de Paris<br>5-7 Pl. Armand Carrel<br>75019 Paris
                                         </p>
                                         <a class="button-map" target="_blank"
-                                            href="https://maps.app.goo.gl/hRMqbE8LeYQ4KYdt9">Map</a>
+                                            href="https://maps.app.goo.gl/hRMqbE8LeYQ4KYdt9" data-i18n="events.map_label">Map</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="index-event__detail detail-sans">
                                 <div class="row">
                                     <div class="col-2 col-md-1">
-                                        <h6>Details</h6>
+                                        <h6 data-i18n="events.details_label">Details</h6>
                                     </div>
                                     <div class="col col-md-8">
-                                        <p class="sans">First stop: the Mairie for the civil ceremony! Come for the
+                                        <p class="sans" data-i18n="events.friday.details1">First stop: the Mairie for the civil ceremony! Come for the
                                             romance, stay to hear our Romanian accents battle the French legal system.
                                             Celebrate our civil ceremony with us as we mark the beginning of our
                                             next chapter, surrounded by the people who mean the most to us.
@@ -354,37 +361,37 @@
                         <div class="col-12 col-md-9">
                             <div class="index-event__divider"></div>
 
-                            <h4>Cocktails, dinner & dancing</h4>
+                            <h4 data-i18n="events.friday.title2">Cocktails, dinner & dancing</h4>
                             <div class="index-event__detail">
                                 <div class="row">
                                     <div class="col-2 col-md-1">
-                                        <h6>Time</h6>
+                                        <h6 data-i18n="events.time_label">Time</h6>
                                     </div>
                                     <div class="col col-md-8">
-                                        <p>17:00 - 1:00</p>
+                                        <p data-i18n="events.friday.time2">17:00 - 1:00</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="index-event__detail">
                                 <div class="row">
                                     <div class="col-2 col-md-1">
-                                        <h6>Where</h6>
+                                        <h6 data-i18n="events.where_label">Where</h6>
                                     </div>
                                     <div class="col col-md-8">
-                                        <p>Hôtel Restaurant Le Charmant<br>53 Rue du Landy<br>93400 Saint-Ouen-sur-Seine
+                                        <p data-i18n="events.friday.where2">Hôtel Restaurant Le Charmant<br>53 Rue du Landy<br>93400 Saint-Ouen-sur-Seine
                                         </p>
                                         <a class="button-map" target="_blank"
-                                            href="https://maps.app.goo.gl/Ham5KcAqc3w9rwuh8">Map</a>
+                                            href="https://maps.app.goo.gl/Ham5KcAqc3w9rwuh8" data-i18n="events.map_label">Map</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="index-event__detail detail-sans">
                                 <div class="row">
                                     <div class="col-2 col-md-1">
-                                        <h6>Details</h6>
+                                        <h6 data-i18n="events.details_label">Details</h6>
                                     </div>
                                     <div class="col col-md-8">
-                                        <p class="sans">Ease into the weekend with a refreshing drink at the gorgeous
+                                        <p class="sans" data-i18n="events.friday.details2">Ease into the weekend with a refreshing drink at the gorgeous
                                             Le Charmant. Let’s catch up with old friends,
                                             make some new ones, and toast to the start of a fun weekend. Curious to see
                                             whether the French or the Romanians will steal the show on the dance floor!
@@ -417,45 +424,45 @@
                         <div class="col col-md-3">
                             <div class="row">
                                 <div class="col-2">
-                                    <h6 class="index-event__num">26 Sept</h6>
+                                    <h6 class="index-event__num" data-i18n="events.saturday.date">26 Sept</h6>
                                 </div>
                                 <div class="col">
-                                    <h3>Saturday</h3>
+                                    <h3 data-i18n="events.saturday.name">Saturday</h3>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-12 col-md-9">
-                            <h4>Recovery Brunch</h4>
+                            <h4 data-i18n="events.saturday.title">Recovery Brunch</h4>
                             <div class="index-event__detail">
                                 <div class="row">
                                     <div class="col-2 col-md-1">
-                                        <h6>Time</h6>
+                                        <h6 data-i18n="events.time_label">Time</h6>
                                     </div>
                                     <div class="col col-md-8">
-                                        <p>11:00-13:00</p>
+                                        <p data-i18n="events.saturday.time">11:00-13:00</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="index-event__detail">
                                 <div class="row">
                                     <div class="col-2 col-md-1">
-                                        <h6>Where</h6>
+                                        <h6 data-i18n="events.where_label">Where</h6>
                                     </div>
                                     <div class="col col-md-8">
-                                        <p>La Cantine Bretonne<br>22bis Rue de l'Ourcq<br>75019 Paris</p>
+                                        <p data-i18n="events.saturday.where">La Cantine Bretonne<br>22bis Rue de l'Ourcq<br>75019 Paris</p>
                                         <a class="button-map" target="_blank"
-                                            href="https://maps.app.goo.gl/M8UPZFfWYUCQS4K26">Map</a>
+                                            href="https://maps.app.goo.gl/M8UPZFfWYUCQS4K26" data-i18n="events.map_label">Map</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="index-event__detail detail-sans">
                                 <div class="row">
                                     <div class="col-2 col-md-1">
-                                        <h6>Details</h6>
+                                        <h6 data-i18n="events.details_label">Details</h6>
                                     </div>
                                     <div class="col col-md-8">
-                                        <p class="sans">For those still around on Saturday, join us for a relaxing
+                                        <p class="sans" data-i18n="events.saturday.details">For those still around on Saturday, join us for a relaxing
                                             lunch. We're hosting a casual crêpe party at La Cantine Bretonne.</p>
                                     </div>
                                 </div>
@@ -480,10 +487,10 @@
             <div class="container">
                 <div class="row justify-content-md-center intro-banger">
                     <div class="col">
-                        <h5 class="text-center banger-top">Le Temps de l’Amour</h5>
+                        <h5 class="text-center banger-top" data-i18n="stay.intro_title">Le Temps de l’Amour</h5>
                         <h3 class="text-center">
-                            <span class="banger-1">Paris</span>
-                            <span class="banger-2">France</span>
+                            <span class="banger-1" data-i18n="stay.intro_subtitle1">Paris</span>
+                            <span class="banger-2" data-i18n="stay.intro_subtitle2">France</span>
                         </h3>
                     </div>
                 </div>
@@ -495,7 +502,7 @@
                         <div class="index-la__card-icon">
                             <img src="/public/marriage/bell-12d84be9.svg" alt="Bell">
                         </div>
-                        <h4>Stay</h4>
+                        <h4 data-i18n="stay.title">Stay</h4>
                         <div class="index-hotels">
 
                             <div class="index-hotel">
@@ -505,30 +512,30 @@
                                 <div class="index-hotel__details">
                                     <div class="row">
                                         <div class="col-3 col-md-2">
-                                            <h6>Details</h6>
+                                            <h6 data-i18n="stay.details_label">Details</h6>
                                         </div>
                                         <div class="col col-md-10">
-                                            <p>This is the hotel of the place where the party is at.</p>
+                                            <p data-i18n="stay.hotel_details">This is the hotel of the place where the party is at.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="index-hotel__details">
                                     <div class="row">
                                         <div class="col-3 col-md-2">
-                                            <h6>Price</h6>
+                                            <h6 data-i18n="stay.price_label">Price</h6>
                                         </div>
                                         <div class="col col-md-10">
-                                            <p>€130-160 per room for a night for 2 persons</p>
+                                            <p data-i18n="stay.hotel_price">€130-160 per room for a night for 2 persons</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="index-hotel__details">
                                     <div class="row">
                                         <div class="col-3 col-md-2">
-                                            <h6>Book</h6>
+                                            <h6 data-i18n="stay.book_label">Book</h6>
                                         </div>
                                         <div class="col col-md-10">
-                                            <p> <a target="_blank" style="color: #FF5734"
+                                            <p data-i18n="stay.hotel_book"> <a target="_blank" style="color: #FF5734"
                                                     href="https://hotel-lecharmant-saint-ouen.fr/fr/restaurant-de-saison-a-saint-ouen">Click
                                                     here</a> to book, make sure to mention that it's for "Alina &
                                                 Bogdan" Wedding.</p>
@@ -538,7 +545,7 @@
                             </div>
 
                             <div class="index-hotel">
-                                <p>There are many other options available via booking.com or Airbnb. If you need
+                                <p data-i18n="stay.other_options">There are many other options available via booking.com or Airbnb. If you need
                                     any help or recommendations, <b>feel free to reach out</b> to Alina or Bogdan.</p>
                             </div>
 
@@ -552,12 +559,12 @@
             <div class="container">
                 <div class="row justify-content-md-center">
                     <div class="col col-md-10">
-                        <h5 class="text-center">Registry</h5>
-                        <h2 class="text-center">Your presence is our gift</h2>
-                        <p class="large text-center">
+                        <h5 class="text-center" data-i18n="registry.title">Registry</h5>
+                        <h2 class="text-center" data-i18n="registry.subtitle">Your presence is our gift</h2>
+                        <p class="large text-center" data-i18n="registry.text1">
                             Having loving family and friends in our lives is the best gift of all.
                         </p>
-                        <p class="text-center large">If you could make it, please let us know by <a
+                        <p class="text-center large" data-i18n="registry.text2">If you could make it, please let us know by <a
                                 style="color: #FF5734"
                                 href="https://docs.google.com/forms/d/e/1FAIpQLSeR0944tC5XnLzcp_ttfgOx_PPWGuOVlYyxBHPPrNim2hr4Bw/viewform?usp=publish-editor">clicking
                                 here</a>.</p>
@@ -579,9 +586,9 @@
                         <div class="index-la__card-icon">
                             <img src="/public/marriage/bell-12d84be9.svg" alt="Bell">
                         </div>
-                        <h4>Witnesses</h4>
+                        <h4 data-i18n="witnesses.title">Witnesses</h4>
                         <div class="index-hotels">
-                            <p class="large text-center">Special thanks to our witnesses, Clara & Marina, who we love,
+                            <p class="large text-center" data-i18n="witnesses.text">Special thanks to our witnesses, Clara & Marina, who we love,
                                 and we're sure you'll love
                                 as
                                 well.</p>
@@ -637,9 +644,16 @@
             <img src="/public/marriage/mark-dc6f1365.png" class="footer-mark" alt="Mark">
         </div>
         <div class="" style="text-align: center">
-            <p>Created with ❤️ by Alina & Bogdan after a bottle of wine. We were inspired by the work of <a
+            <p data-i18n="footer.text">Created with ❤️ by Alina & Bogdan after a bottle of wine. We were inspired by the work of <a
                     href="https://danielaandmoe.com/">Daniela & Moe</a> and <a href="https://jackiehu.design/">
                     Jackie Hu</a></p>
+        </div>
+        <div class="footer-lang-selector" style="text-align: center; margin-top: 1.5rem;">
+            <select id="lang-select-footer" class="lang-select">
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="ro">Română</option>
+            </select>
         </div>
     </footer>
 

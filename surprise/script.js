@@ -3889,7 +3889,7 @@ function loadVinylPlayer() {
     }
 
     var isTouch = false;
-    $(window).on("touchstart", function() {
+    $(window).on("touchstart", function () {
         isTouch = true;
     });
 
@@ -3929,7 +3929,287 @@ function loadVinylPlayer() {
     });
 }
 
+var translations = {
+    "en": {
+        "nav.story": "Our Story",
+        "nav.facts": "Fun Facts",
+        "nav.events": "Events",
+        "nav.hotels": "Hotels",
+        "nav.rsvp": "RSVP",
+        "header.vinyl_warning": "Don't you dare<br>click on the vinyl!",
+        "header.date": "September 25th 2026",
+        "story.title": "Our Story",
+        "story.subtitle": "Saying 'oui' à Paris.",
+        "story.text": "After 16 years together (nearly half our lives) and 10 years of PACS, we’ve shared more laughter, adventures, and beautiful moments than we could ever count. As it happens, 2026 is also the year both of us became French 🇫🇷, which felt like the perfect excuse for a celebration in Paris. This won’t be a traditional wedding - just a celebration that feels a little more like a birthday party. No stress. No pressure. No dress code. Just come as you are.",
+        "facts.title": "Fun Facts",
+        "facts.subtitle": "Quirky lil quiz about the happy couple",
+        "facts.click": "Click",
+        "facts.hover": "Hover",
+        "facts.for_answer": "for Answer",
+        "facts.fact1_q": "How long have we known each other?",
+        "facts.fact1_a": "16 years and counting",
+        "facts.fact2_q": "Where did we meet?",
+        "facts.fact2_a": "In Galați, in highschool, but our story starter later on in Bucharest.",
+        "facts.fact3_q": "Comfort food?",
+        "facts.fact3_a": "French fries with cheese, fried eggs, and a summer salad.",
+        "facts.fact4_q": "Where did we get engaged?",
+        "facts.fact4_a": "Milos, Greece",
+        "facts.fact5_q": "Favorite Paris spot?",
+        "facts.fact5_a": "Alina: <a target=\"_blank\" href=\"https://maps.app.goo.gl/tR8tCVfip4kz9QdZ7\"><span class=\"strikethrough\">Malta</span> Parc des Buttes-Chaumont</a><br>Bogdan: <a target=\"_blank\" href=\"https://maps.app.goo.gl/rAR2dq7VNYqWhKvg9\">Canal Saint-Martin</a>",
+        "marriage.title": "Join Us in Paris",
+        "marriage.subtitle": "Marriage Celebration",
+        "marriage.text": "Join us in Paris this September as we will officially say \"oui\". We'll be celebrating with the civil ceremony at the 19th Arrondissement City Hall, followed by dinner, drinks and a small party. Can't wait to celebrate with you ! ❤️",
+        "events.title": "Fun in the Sun (hopefully)",
+        "events.subtitle1": "Weekend",
+        "events.subtitle2": "Events",
+        "events.day": "Day",
+        "events.details_header": "Time / Location / Etc",
+        "events.friday.date": "26 Sept",
+        "events.friday.name": "Friday",
+        "events.friday.title1": "Civil Ceremony",
+        "events.time_label": "Time",
+        "events.friday.time1": "15:15 - 16:15",
+        "events.where_label": "Where",
+        "events.friday.where1": "Mairie du 19ᵉ arrondissement de Paris<br>5-7 Pl. Armand Carrel<br>75019 Paris",
+        "events.map_label": "Map",
+        "events.details_label": "Details",
+        "events.friday.details1": "First stop: the Mairie for the civil ceremony! Come for the romance, stay to hear our Romanian accents battle the French legal system. Celebrate our civil ceremony with us as we mark the beginning of our next chapter, surrounded by the people who mean the most to us.",
+        "events.friday.title2": "Cocktails, dinner & dancing",
+        "events.friday.time2": "17:00 - 1:00",
+        "events.friday.where2": "Hôtel Restaurant Le Charmant<br>53 Rue du Landy<br>93400 Saint-Ouen-sur-Seine",
+        "events.friday.details2": "Ease into the weekend with a refreshing drink at the gorgeous Le Charmant. Let’s catch up with old friends, make some new ones, and toast to the start of a fun weekend. Curious to see whether the French or the Romanians will steal the show on the dance floor!",
+        "events.saturday.date": "26 Sept",
+        "events.saturday.name": "Saturday",
+        "events.saturday.title": "Recovery Brunch",
+        "events.saturday.time": "11:00-13:00",
+        "events.saturday.where": "La Cantine Bretonne<br>22bis Rue de l'Ourcq<br>75019 Paris",
+        "events.saturday.details": "For those still around on Saturday, join us for a relaxing lunch. We're hosting a casual crêpe party at La Cantine Bretonne.",
+        "stay.intro_title": "Le Temps de l’Amour",
+        "stay.intro_subtitle1": "Paris",
+        "stay.intro_subtitle2": "France",
+        "stay.title": "Stay",
+        "stay.details_label": "Details",
+        "stay.hotel_details": "This is the hotel of the place where the party is at.",
+        "stay.price_label": "Price",
+        "stay.hotel_price": "€130-160 per room for a night for 2 persons",
+        "stay.book_label": "Book",
+        "stay.hotel_book": " <a target=\"_blank\" style=\"color: #FF5734\" href=\"https://hotel-lecharmant-saint-ouen.fr/fr/restaurant-de-saison-a-saint-ouen\">Click here</a> to book, make sure to mention that it's for \"Alina & Bogdan\" Wedding.",
+        "stay.other_options": "There are many other options available via booking.com or Airbnb. If you need any help or recommendations, <b>feel free to reach out</b> to Alina or Bogdan.",
+        "registry.title": "Registry",
+        "registry.subtitle": "Your presence is our gift",
+        "registry.text1": "Having loving family and friends in our lives is the best gift of all.",
+        "registry.text2": "If you could make it, please let us know by <a style=\"color: #FF5734\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSeR0944tC5XnLzcp_ttfgOx_PPWGuOVlYyxBHPPrNim2hr4Bw/viewform?usp=publish-editor\">clicking here</a>.",
+        "witnesses.title": "Witnesses",
+        "witnesses.text": "Special thanks to our witnesses, Clara & Marina, who we love, and we're sure you'll love as well.",
+        "footer.text": "Created with ❤️ by Alina & Bogdan after a bottle of wine. We were inspired by the work of <a href=\"https://danielaandmoe.com/\">Daniela & Moe</a> and <a href=\"https://jackiehu.design/\">Jackie Hu</a>"
+    },
+    "fr": {
+        "nav.story": "Notre Histoire",
+        "nav.facts": "Anecdotes",
+        "nav.events": "Événements",
+        "nav.hotels": "Hébergement",
+        "nav.rsvp": "RSVP",
+        "header.vinyl_warning": "Ne t'avise surtout pas<br>de cliquer sur le vinyle !",
+        "header.date": "25 septembre 2026",
+        "story.title": "Notre Histoire",
+        "story.subtitle": "Dire 'oui' à Paris.",
+        "story.text": "Après 16 ans ensemble (presque la moitié de nos vies) and 10 ans de PACS, nous avons partagé plus de rires, d'aventures et de moments magnifiques que nous ne pourrions en compter. Il se trouve que 2026 est aussi l'année où nous sommes tous les deux devenus Français 🇫🇷, ce qui nous a semblé être le prétexte idéal pour faire la fête à Paris. Ce ne sera pas un mariage traditionnel — juste une célébration qui ressemble un peu plus à une fête d'anniversaire. Pas de stress. Pas de pression. Pas de dress code. Venez simplement comme vous êtes.",
+        "facts.title": "Anecdotes",
+        "facts.subtitle": "Un petit quiz original sur les futurs mariés",
+        "facts.click": "Cliquez",
+        "facts.hover": "Survolez",
+        "facts.for_answer": "pour voir la réponse",
+        "facts.fact1_q": "Depuis combien de temps nous connaissons-nous ?",
+        "facts.fact1_a": "16 ans et ce n'est pas fini !",
+        "facts.fact2_q": "Où nous sommes-nous rencontrés ?",
+        "facts.fact2_a": "À Galați, au lycée, mais notre histoire a commencé plus tard à Bucarest.",
+        "facts.fact3_q": "Plat réconfortant ?",
+        "facts.fact3_a": "Des frites avec du fromage, des œufs au plat et une salade d'été.",
+        "facts.fact4_q": "Où nous sommes-nous fiancés ?",
+        "facts.fact4_a": "À Milos, en Grèce",
+        "facts.fact5_q": "Notre coin préféré à Paris ?",
+        "facts.fact5_a": "Alina : <a target=\"_blank\" href=\"https://maps.app.goo.gl/tR8tCVfip4kz9QdZ7\"><span class=\"strikethrough\">Malta</span> Parc des Buttes-Chaumont</a><br>Bogdan : <a target=\"_blank\" href=\"https://maps.app.goo.gl/rAR2dq7VNYqWhKvg9\">Canal Saint-Martin</a>",
+        "marriage.title": "Rejoignez-nous à Paris",
+        "marriage.subtitle": "Célébration du Mariage",
+        "marriage.text": "Rejoignez-nous à Paris ce mois de septembre pour notre 'oui' officiel. Nous célébrerons notre union civile à la mairie du 19e arrondissement, suivie d'un dîner, de verres et d'une petite fête. Nous avons tellement hâte de célébrer cela avec vous ! ❤️",
+        "events.title": "Du fun sous le soleil (on l'espère)",
+        "events.subtitle1": "Événements du",
+        "events.subtitle2": "Week-end",
+        "events.day": "Jour",
+        "events.details_header": "Heure / Lieu / Infos",
+        "events.friday.date": "25 Sept",
+        "events.friday.name": "Vendredi",
+        "events.friday.title1": "Cérémonie Civile",
+        "events.time_label": "Heure",
+        "events.friday.time1": "15:15 - 16:15",
+        "events.where_label": "Lieu",
+        "events.friday.where1": "Mairie du 19ᵉ arrondissement de Paris<br>5-7 Pl. Armand Carrel<br>75019 Paris",
+        "events.map_label": "Plan",
+        "events.details_label": "Détails",
+        "events.friday.details1": "Première étape : la Mairie pour la cérémonie civile ! Venez pour le romantisme, restez pour entendre nos accents roumains défier le système juridique français. Célébrez notre union civile avec nous alors que nous entamons notre nouveau chapitre, entourés de ceux qui comptent le plus pour nous.",
+        "events.friday.title2": "Cocktails, dîner & danse",
+        "events.friday.time2": "17:00 - 1:00",
+        "events.friday.where2": "Hôtel Restaurant Le Charmant<br>53 Rue du Landy<br>93400 Saint-Ouen-sur-Seine",
+        "events.friday.details2": "Démarrez le week-end en douceur avec un verre rafraîchissant dans le cadre magnifique du Charmant. L'occasion de retrouver de vieux amis, d'en rencontrer de nouveaux, et de trinquer au début d'un excellent week-end. Curieux de voir qui des Français ou des Roumains feront le show sur la piste de danse !",
+        "events.saturday.date": "26 Sept",
+        "events.saturday.name": "Samedi",
+        "events.saturday.title": "Brunch de Récupération",
+        "events.saturday.time": "11:00 - 13:00",
+        "events.saturday.where": "La Cantine Bretonne<br>22bis Rue de l'Ourcq<br>75019 Paris",
+        "events.saturday.details": "Pour ceux qui sont encore là le samedi, rejoignez-nous pour un déjeuner détendu. Nous organisons une crêpe-party décontractée à La Cantine Bretonne.",
+        "stay.intro_title": "Le Temps de l’Amour",
+        "stay.intro_subtitle1": "Paris",
+        "stay.intro_subtitle2": "France",
+        "stay.title": "Hébergement",
+        "stay.details_label": "Détails",
+        "stay.hotel_details": "Il s'agit de l'hôtel du lieu où se déroule la fête.",
+        "stay.price_label": "Prix",
+        "stay.hotel_price": "130-160 € par chambre pour une nuit pour 2 personnes",
+        "stay.book_label": "Réservation",
+        "stay.hotel_book": " <a target=\"_blank\" style=\"color: #FF5734\" href=\"https://hotel-lecharmant-saint-ouen.fr/fr/restaurant-de-saison-a-saint-ouen\">Cliquez ici</a> pour réserver, n'oubliez pas de mentionner qu'il s'agit du mariage d'Alina & Bogdan.",
+        "stay.other_options": "De nombreuses autres options sont disponibles sur booking.com ou Airbnb. Si vous avez besoin d'aide ou de recommandations, <b>n'hésitez pas à contacter</b> Alina ou Bogdan.",
+        "registry.title": "Liste de Mariage",
+        "registry.subtitle": "Votre présence est notre plus beau cadeau",
+        "registry.text1": "Avoir une famille et des amis aimants dans notre vie est le plus beau des cadeaux.",
+        "registry.text2": "Si vous pouvez venir, merci de nous le faire savoir en <a style=\"color: #FF5734\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSeR0944tC5XnLzcp_ttfgOx_PPWGuOVlYyxBHPPrNim2hr4Bw/viewform?usp=publish-editor\">cliquant ici</a>.",
+        "witnesses.title": "Témoins",
+        "witnesses.text": "Un merci tout particulier à nos témoins, Clara & Marina, que nous aimons de tout cœur, et que vous allez adorer à coup sûr.",
+        "footer.text": "Créé avec ❤️ par Alina & Bogdan après une bouteille de vin. Nous nous sommes inspirés du travail de <a href=\"https://danielaandmoe.com/\">Daniela & Moe</a> et de <a href=\"https://jackiehu.design/\">Jackie Hu</a>"
+    },
+    "ro": {
+        "nav.story": "Povestea Noastră",
+        "nav.facts": "Curiozități",
+        "nav.events": "Evenimente",
+        "nav.hotels": "Cazare",
+        "nav.rsvp": "RSVP",
+        "header.vinyl_warning": "Nici să nu te gândești<br>să apeși pe vinil!",
+        "header.date": "25 Septembrie 2026",
+        "story.title": "Povestea Noastră",
+        "story.subtitle": "Spunem 'oui' la Paris.",
+        "story.text": "După 16 ani împreună (aproape jumătate din viața noastră) și 10 ani de PACS, am împărtășit mai multe hohote de râs, aventuri și momente frumoase decât am putea număra vreodată. Întâmplarea face ca 2026 să fie și anul în care amândoi am devenit cetățeni francezi 🇫🇷, ceea ce ni s-a părut pretextul perfect pentru o petrecere la Paris. Aceasta nu va fi o nuntă tradițională — ci doar o sărbătoare care seamănă mai degrabă cu o petrecere de zi de naștere. Fără stres. Fără presiune. Fără dress code. Vino exact așa cum ești.",
+        "facts.title": "Curiozități",
+        "facts.subtitle": "Un mic quiz trăsnit despre fericitul cuplu",
+        "facts.click": "Apasă",
+        "facts.hover": "Treci cursorul",
+        "facts.for_answer": "pentru răspuns",
+        "facts.fact1_q": "De cât timp ne cunoaștem?",
+        "facts.fact1_a": "De 16 ani și continuăm să numărăm",
+        "facts.fact2_q": "Unde ne-am cunoscut?",
+        "facts.fact2_a": "În Galați, în liceu, dar povestea noastră a început mai târziu în București.",
+        "facts.fact3_q": "Mâncarea de suflet?",
+        "facts.fact3_a": "Cartofi prăjiți cu brânză rasă, ochiuri și salată de vară.",
+        "facts.fact4_q": "Unde ne-am logodit?",
+        "facts.fact4_a": "În Milos, Grecia",
+        "facts.fact5_q": "Locul preferat din Paris?",
+        "facts.fact5_a": "Alina: <a target=\"_blank\" href=\"https://maps.app.goo.gl/tR8tCVfip4kz9QdZ7\"><span class=\"strikethrough\">Malta</span> Parc des Buttes-Chaumont</a><br>Bogdan: <a target=\"_blank\" href=\"https://maps.app.goo.gl/rAR2dq7VNYqWhKvg9\">Canal Saint-Martin</a>",
+        "marriage.title": "Alătură-te nouă la Paris",
+        "marriage.subtitle": "Sărbătorirea Căsătoriei",
+        "marriage.text": "Vino cu noi la Paris în luna septembrie, când vom spune oficial 'oui'. Vom sărbători cu ceremonia civilă la Primăria Arondismentului 19, urmată de cină, băutură și o mică petrecere. Abia așteptăm să sărbătorim alături de voi! ❤️",
+        "events.title": "Distracție la soare (să sperăm)",
+        "events.subtitle1": "Evenimentele",
+        "events.subtitle2": "de Weekend",
+        "events.day": "Ziua",
+        "events.details_header": "Oră / Locație / Detalii",
+        "events.friday.date": "25 Sept",
+        "events.friday.name": "Vineri",
+        "events.friday.title1": "Ceremonia Civilă",
+        "events.time_label": "Oră",
+        "events.friday.time1": "15:15 - 16:15",
+        "events.where_label": "Unde",
+        "events.friday.where1": "Mairie du 19ᵉ arrondissement de Paris<br>5-7 Pl. Armand Carrel<br>75019 Paris",
+        "events.map_label": "Hartă",
+        "events.details_label": "Detalii",
+        "events.friday.details1": "Prima oprire: la Primărie (Mairie) pentru ceremonia civilă! Vino pentru romantism, rămâi ca să ne auzi accentul românesc luptându-se cu sistemul juridic francez. Sărbătorește alături de noi ceremonia noastră civilă, ce marchează începutul următorului nostru capitol, înconjurați de oamenii care contează cel mai mult pentru noi.",
+        "events.friday.title2": "Cocktailuri, cină & dans",
+        "events.friday.time2": "17:00 - 1:00",
+        "events.friday.where2": "Hôtel Restaurant Le Charmant<br>53 Rue du Landy<br>93400 Saint-Ouen-sur-Seine",
+        "events.friday.details2": "Începe weekendul relaxat, cu o băutură răcoritoare în superbă locație Le Charmant. Să povestim cu vechi prieteni, să ne facem unii noi și să ciocnim pentru începutul unui weekend minunat. Suntem curioși să vedem cine va face spectacol pe ringul de dans: francezii sau românii!",
+        "events.saturday.date": "26 Sept",
+        "events.saturday.name": "Sâmbătă",
+        "events.saturday.title": "Brunch de Recuperare",
+        "events.saturday.time": "11:00-13:00",
+        "events.saturday.where": "La Cantine Bretonne<br>22bis Rue de l'Ourcq<br>75019 Paris",
+        "events.saturday.details": "Pentru cei care mai sunt prin preajmă sâmbătă, veniți cu noi la un prânz relaxant. Găzduim o petrecere informală cu clătite (crêpes) la La Cantine Bretonne.",
+        "stay.intro_title": "Le Temps de l’Amour",
+        "stay.intro_subtitle1": "Paris",
+        "stay.intro_subtitle2": "Franța",
+        "stay.title": "Cazare",
+        "stay.details_label": "Detalii",
+        "stay.hotel_details": "Acesta este hotelul unde are loc și petrecerea.",
+        "stay.price_label": "Preț",
+        "stay.hotel_price": "€130-160 pe cameră pe noapte pentru 2 persoane",
+        "stay.book_label": "Rezervare",
+        "stay.hotel_book": " <a target=\"_blank\" style=\"color: #FF5734\" href=\"https://hotel-lecharmant-saint-ouen.fr/fr/restaurant-de-saison-a-saint-ouen\">Apasă aici</a> pentru a rezerva, asigură-te că menționezi că este pentru nunta 'Alina & Bogdan'.",
+        "stay.other_options": "Există multe alte opțiuni disponibile prin booking.com sau Airbnb. Dacă ai nevoie de ajutor sau recomandări, <b>nu ezita să îi contactezi</b> pe Alina sau pe Bogdan.",
+        "registry.title": "Cadouri",
+        "registry.subtitle": "Prezența voastră este cadoul nostru",
+        "registry.text1": "Să avem familia și prietenii dragi alături este cel mai frumos cadou dintre toate.",
+        "registry.text2": "Dacă poți ajunge, te rugăm să ne anunți <a style=\"color: #FF5734\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSeR0944tC5XnLzcp_ttfgOx_PPWGuOVlYyxBHPPrNim2hr4Bw/viewform?usp=publish-editor\">apăsând aici</a>.",
+        "witnesses.title": "Martori",
+        "witnesses.text": "Mulțumiri speciale martorelor noastre, Clara & Marina, pe care le iubim și suntem siguri că le veți îndrăgi și voi.",
+        "footer.text": "Creat cu ❤️ de Alina & Bogdan după o sticlă de vin. Am fost inspirați de munca realizată de <a href=\"https://danielaandmoe.com/\">Daniela & Moe</a> și <a href=\"https://jackiehu.design/\">Jackie Hu</a>"
+    }
+};
+
+var currentLanguage = "en";
+
+function i18n(key) {
+    if (translations[currentLanguage] && translations[currentLanguage][key]) {
+        return translations[currentLanguage][key];
+    }
+    return (translations["en"] && translations["en"][key]) || key;
+}
+
+function applyTranslations() {
+    $("[data-i18n]").each(function () {
+        var key = $(this).attr("data-i18n");
+        var val = i18n(key);
+        $(this).html(val);
+    });
+}
+
+function initI18n() {
+    var savedLang = localStorage.getItem("language");
+    if (savedLang) {
+        currentLanguage = savedLang;
+    } else {
+        var browserLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+        if (browserLang.indexOf("fr") === 0) {
+            currentLanguage = "fr";
+        } else if (browserLang.indexOf("ro") === 0) {
+            currentLanguage = "ro";
+        } else {
+            currentLanguage = "en";
+        }
+        localStorage.setItem("language", currentLanguage);
+    }
+
+    $("#lang-select-nav").val(currentLanguage);
+    $("#lang-select-footer").val(currentLanguage);
+
+    $("#lang-select-nav").on("change", function () {
+        var newLang = $(this).val();
+        changeLanguage(newLang);
+    });
+
+    $("#lang-select-footer").on("change", function () {
+        var newLang = $(this).val();
+        changeLanguage(newLang);
+    });
+
+    applyTranslations();
+}
+
+function changeLanguage(newLang) {
+    currentLanguage = newLang;
+    localStorage.setItem("language", newLang);
+    $("#lang-select-nav").val(newLang);
+    $("#lang-select-footer").val(newLang);
+    applyTranslations();
+}
+
 if (document.body.classList.contains("index")) {
+    initI18n();
     yall({ threshold: 500 });
     loadFacts();
     loadOptions();
