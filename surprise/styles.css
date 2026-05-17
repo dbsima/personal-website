@@ -1087,7 +1087,7 @@ canvas {
 }
 
 .index-header__player {
-  top: 400px !important;
+  top: 75px !important;
   right: 20px !important;
   width: 250px !important;
   background: rgba(255, 255, 255, 0.8);
@@ -1105,8 +1105,10 @@ canvas {
 }
 
 .index-header__player.is-visible {
+  position: fixed;
   opacity: 1 !important;
   pointer-events: all;
+  z-index: 13;
 }
 
 .index-header__player span {
