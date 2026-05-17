@@ -3983,7 +3983,7 @@ var translations = {
         "events.subtitle1": "Events",
         "events.day": "Day",
         "events.details_header": "Time / Location / Etc",
-        "events.friday.date": "26 Sept",
+        "events.friday.date": "25 Sept",
         "events.friday.name": "Friday",
         "events.friday.title1": "Civil Ceremony",
         "events.time_label": "Time",
