@@ -4183,6 +4183,12 @@ function applyTranslations() {
         var val = i18n(key);
         $(this).html(val);
     });
+
+    if (currentLanguage === "en" || currentLanguage === "fr") {
+        $("#saturday-event").hide();
+    } else {
+        $("#saturday-event").show();
+    }
 }
 
 function initI18n() {
