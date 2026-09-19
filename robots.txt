@@ -22,3 +22,5 @@ Disallow: /surprise/
 
 User-agent: FacebookBot
 Disallow: /surprise/
+
+Sitemap: https://bogdan.page/sparrly/sitemap.xml
