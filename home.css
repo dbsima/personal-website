@@ -221,6 +221,14 @@ body {
     color: var(--text-main);
 }
 
+.block-subtitle {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-main);
+    margin: 1.5rem 0 0.6rem;
+}
+
 .block-body p {
     font-size: 1.05rem;
     line-height: 1.7;
