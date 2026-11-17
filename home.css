@@ -190,7 +190,6 @@ body {
 }
 
 .badge-red {
-    background-color: #fee2e2;
     color: #dc2626;
     width: 28px;
     height: 28px;
@@ -203,7 +202,6 @@ body {
 }
 
 .badge-green {
-    background-color: #dcfce7;
     color: #16a34a;
     width: 28px;
     height: 28px;
@@ -215,6 +213,13 @@ body {
     font-size: 0.85rem;
 }
 
+.section-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: block;
+}
+
 .block-title {
     font-family: var(--font-heading);
     font-weight: 400;
@@ -222,6 +227,9 @@ body {
 }
 
 .block-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
     font-family: var(--font-heading);
     font-size: 1.2rem;
     font-weight: 400;
@@ -320,6 +328,26 @@ body {
 .badge-red ion-icon,
 .badge-green ion-icon {
     font-size: 1.15rem;
+}
+
+/* Footer Section */
+.page-footer {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+
+.page-footer a {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.page-footer a:hover {
+    color: var(--text-muted);
+    text-decoration: underline;
 }
 
 /* Keyframe Animations */
